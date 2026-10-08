@@ -11,7 +11,17 @@
     ],
     "meaning": "A new path asks for curiosity and a willingness to begin before every detail is known.",
     "reflection": "Where could you take a small, brave first step?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Recklessness",
+        "Hesitation",
+        "Unpreparedness"
+      ],
+      "meaning": "An impulse may be outrunning your preparation, or fear may be keeping you at the threshold. Find a first step that leaves room to learn.",
+      "reflection": "Where would a little preparation make a leap safer?",
+      "rules": ""
+    }
   },
   {
     "id": "major-1",
@@ -25,7 +35,17 @@
     ],
     "meaning": "Bring your tools, attention, and intention together. You have resources that can turn an idea into action.",
     "reflection": "What can you make with what you already have?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Scattered effort",
+        "Misuse of skill",
+        "Doubt"
+      ],
+      "meaning": "Your tools are available, but intention and action may be pulling apart. Focus your ability on something honest and concrete.",
+      "reflection": "What distraction is keeping your skills from serving your intention?",
+      "rules": ""
+    }
   },
   {
     "id": "major-2",
@@ -39,7 +59,17 @@
     ],
     "meaning": "Pause and listen beneath the obvious. Some understanding arrives through observation rather than immediate action.",
     "reflection": "What have you sensed but not yet acknowledged?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Disconnected intuition",
+        "Secrecy",
+        "Noise"
+      ],
+      "meaning": "Outside noise or withheld information may be drowning out your inner response. Make space to listen without treating every feeling as certainty.",
+      "reflection": "What needs quiet attention before you decide?",
+      "rules": ""
+    }
   },
   {
     "id": "major-3",
@@ -53,7 +83,17 @@
     ],
     "meaning": "Care and patient cultivation help something grow. Make room for comfort, creativity, and the natural rhythm of development.",
     "reflection": "What in your life needs tending?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Neglected needs",
+        "Creative block",
+        "Overgiving"
+      ],
+      "meaning": "Care and creativity can become depleted when your own needs are left outside the circle. Restore nourishment without forcing growth.",
+      "reflection": "Where are you giving more care than you can sustain?",
+      "rules": ""
+    }
   },
   {
     "id": "major-4",
@@ -67,7 +107,17 @@
     ],
     "meaning": "Clear boundaries and steady leadership create a reliable foundation. Consider how structure can support your goals.",
     "reflection": "Which boundary would bring greater stability?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Rigidity",
+        "Control",
+        "Weak boundaries"
+      ],
+      "meaning": "Structure may have become controlling, or a lack of boundaries may be undermining stability. Look for authority that supports rather than constrains.",
+      "reflection": "Which boundary needs to become clearer or more flexible?",
+      "rules": ""
+    }
   },
   {
     "id": "major-5",
@@ -81,7 +131,17 @@
     ],
     "meaning": "Established practices and shared knowledge offer a starting point. Examine the teachings you follow and why they matter.",
     "reflection": "Which tradition supports you, and which needs questioning?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Questioning tradition",
+        "Conformity",
+        "Personal values"
+      ],
+      "meaning": "An inherited rule may no longer fit. Examine its purpose and choose which guidance deserves your continued trust.",
+      "reflection": "Which expectation are you following without choosing it?",
+      "rules": ""
+    }
   },
   {
     "id": "major-6",
@@ -95,7 +155,17 @@
     ],
     "meaning": "A meaningful choice asks you to bring actions into alignment with your values. Honest connection begins with clarity.",
     "reflection": "What choice best reflects your values?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Misalignment",
+        "Disharmony",
+        "Difficult choices"
+      ],
+      "meaning": "Desire, values, and commitments may be pointing in different directions. An honest conversation can reveal what a meaningful choice requires.",
+      "reflection": "Where are your choices out of step with your values?",
+      "rules": ""
+    }
   },
   {
     "id": "major-7",
@@ -109,7 +179,17 @@
     ],
     "meaning": "Gather competing impulses into a clear direction. Progress comes through focus, discipline, and deliberate effort.",
     "reflection": "Where do you want to direct your energy?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Lost direction",
+        "Force",
+        "Competing aims"
+      ],
+      "meaning": "Pushing harder may not resolve conflicting aims. Slow down enough to decide what you are steering toward.",
+      "reflection": "What needs alignment before you move forward?",
+      "rules": ""
+    }
   },
   {
     "id": "major-8",
@@ -123,7 +203,17 @@
     ],
     "meaning": "Quiet courage can be more effective than force. Meet difficulty with patience and care for yourself and others.",
     "reflection": "How could you respond with steady kindness?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Self-doubt",
+        "Depletion",
+        "Impatience"
+      ],
+      "meaning": "Confidence may be thin, and frustration may be replacing gentleness. Patience and rest can restore a steadier form of courage.",
+      "reflection": "How could you meet yourself with more kindness?",
+      "rules": ""
+    }
   },
   {
     "id": "major-9",
@@ -137,7 +227,17 @@
     ],
     "meaning": "Step back from the noise to find your own understanding. A period of reflection can illuminate the next step.",
     "reflection": "What becomes clearer when you slow down?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Isolation",
+        "Avoidance",
+        "Returning"
+      ],
+      "meaning": "Solitude may have become withdrawal, or you may be ready to bring an insight back into relationship. Consider whether distance is helping you see.",
+      "reflection": "Is your time alone restoring you or keeping you hidden?",
+      "rules": ""
+    }
   },
   {
     "id": "major-10",
@@ -151,7 +251,17 @@
     ],
     "meaning": "Circumstances shift and cycles turn. Notice what you can influence and where adaptability may serve you.",
     "reflection": "How can you meet change with flexibility?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Resistance to change",
+        "Setbacks",
+        "Cycles"
+      ],
+      "meaning": "A difficult turn can expose a pattern you cannot control through effort alone. Work with the choices available while the wider cycle changes.",
+      "reflection": "Which part of this cycle is yours to influence?",
+      "rules": ""
+    }
   },
   {
     "id": "major-11",
@@ -165,7 +275,17 @@
     ],
     "meaning": "Look honestly at choices and consequences. A balanced assessment asks for evidence, responsibility, and fairness.",
     "reflection": "What would a fair response look like?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Unfairness",
+        "Avoidance",
+        "Accountability"
+      ],
+      "meaning": "A decision or account may be incomplete or unequal. Look honestly at evidence, responsibility, and the repair that is still possible.",
+      "reflection": "What truth or responsibility needs acknowledgment?",
+      "rules": ""
+    }
   },
   {
     "id": "major-12",
@@ -179,7 +299,17 @@
     ],
     "meaning": "A pause may reveal a different angle. Release the urge to force progress and consider another way of seeing.",
     "reflection": "What changes when you look from another perspective?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Stalling",
+        "Resistance",
+        "Unhelpful sacrifice"
+      ],
+      "meaning": "Waiting may have stopped offering perspective, or a sacrifice may no longer serve its purpose. Distinguish a useful pause from being stuck.",
+      "reflection": "What would make this pause purposeful again?",
+      "rules": ""
+    }
   },
   {
     "id": "major-13",
@@ -193,7 +323,17 @@
     ],
     "meaning": "An ending makes room for change. Let an outgrown pattern close so a new phase can develop.",
     "reflection": "What are you ready to release?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Holding on",
+        "Delayed endings",
+        "Fear of change"
+      ],
+      "meaning": "An ending may be resisted even after its work is done. Letting go in small steps can make room for renewal.",
+      "reflection": "What are you keeping alive out of fear of what follows?",
+      "rules": ""
+    }
   },
   {
     "id": "major-14",
@@ -207,7 +347,17 @@
     ],
     "meaning": "Combine different needs with patience. A sustainable rhythm often emerges through small adjustments.",
     "reflection": "What needs a gentler balance?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Imbalance",
+        "Excess",
+        "Poor pacing"
+      ],
+      "meaning": "Your rhythms or priorities may be out of proportion. Adjust one habit at a time rather than demanding instant balance.",
+      "reflection": "What small adjustment would make your pace more sustainable?",
+      "rules": ""
+    }
   },
   {
     "id": "major-15",
@@ -221,7 +371,17 @@
     ],
     "meaning": "Notice habits or attachments that limit your freedom. Naming a pattern can be the first step toward choosing differently.",
     "reflection": "What feels compulsory, and what choice remains yours?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Release",
+        "Recognizing patterns",
+        "Reclaiming choice"
+      ],
+      "meaning": "A binding pattern may be loosening as you recognize its cost. Freedom grows through practical choices and support, not self-blame.",
+      "reflection": "Which small choice would weaken a pattern that limits you?",
+      "rules": ""
+    }
   },
   {
     "id": "major-16",
@@ -235,7 +395,17 @@
     ],
     "meaning": "A shaken assumption can expose what needs rebuilding. Seek a more honest foundation after an unexpected change.",
     "reflection": "Which assumption deserves a second look?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Avoided disruption",
+        "Private upheaval",
+        "Delayed repair"
+      ],
+      "meaning": "A needed change may be postponed, or a disruption may be unfolding inwardly. Address a weak foundation before it demands more attention.",
+      "reflection": "What unstable structure can you begin to repair?",
+      "rules": ""
+    }
   },
   {
     "id": "major-17",
@@ -249,7 +419,17 @@
     ],
     "meaning": "Let yourself reconnect with hope and possibility. Small acts of renewal can restore a sense of direction.",
     "reflection": "What helps you feel renewed?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Discouragement",
+        "Lost faith",
+        "Quiet renewal"
+      ],
+      "meaning": "Hope may feel distant when effort has not brought relief. Seek a small, credible source of renewal rather than forcing optimism.",
+      "reflection": "What still offers a modest reason to keep going?",
+      "rules": ""
+    }
   },
   {
     "id": "major-18",
@@ -263,7 +443,17 @@
     ],
     "meaning": "Not everything is clear yet. Distinguish feelings and assumptions from what you know, and move thoughtfully.",
     "reflection": "What needs clarification before you act?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Emerging clarity",
+        "Lingering confusion",
+        "Facing fears"
+      ],
+      "meaning": "Uncertainty may be beginning to lift, though fear can still shape what you see. Check assumptions and let clarity arrive gradually.",
+      "reflection": "Which fear can you separate from the facts?",
+      "rules": ""
+    }
   },
   {
     "id": "major-19",
@@ -277,7 +467,17 @@
     ],
     "meaning": "Clarity and warmth invite you to enjoy what is working. Give yourself permission to celebrate simple successes.",
     "reflection": "What deserves celebration today?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Muted joy",
+        "Delay",
+        "Unrealistic expectations"
+      ],
+      "meaning": "Enjoyment may be obscured by exhaustion, delay, or an expectation of perfection. Notice what is working without denying what is difficult.",
+      "reflection": "What good thing are you overlooking because it is incomplete?",
+      "rules": ""
+    }
   },
   {
     "id": "major-20",
@@ -291,7 +491,17 @@
     ],
     "meaning": "Reflect on what experience has taught you. An honest review can help you answer a renewed sense of purpose.",
     "reflection": "What lesson are you ready to put into practice?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Self-criticism",
+        "Avoided reckoning",
+        "Unanswered call"
+      ],
+      "meaning": "Harsh judgment or reluctance to reflect may be blocking a fresh start. Review your choices with responsibility and compassion.",
+      "reflection": "What can you acknowledge without turning it into a verdict on yourself?",
+      "rules": ""
+    }
   },
   {
     "id": "major-21",
@@ -305,7 +515,17 @@
     ],
     "meaning": "A cycle reaches completion. Recognize the work behind it and carry its lessons into what comes next.",
     "reflection": "What have you completed, and what have you learned?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Loose ends",
+        "Delayed completion",
+        "Incomplete closure"
+      ],
+      "meaning": "A chapter may be nearly finished but still need integration or a final task. Name what remains before reaching for the next beginning.",
+      "reflection": "What would give this chapter a sense of completion?",
+      "rules": ""
+    }
   },
   {
     "id": "wands-1",
@@ -319,7 +539,17 @@
     ],
     "meaning": "A fresh possibility is emerging. The suit of Wands brings this theme to creativity, motivation, and action.",
     "reflection": "How does beginnings show up in your creativity, motivation, and action?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Blocked spark",
+        "Delay",
+        "Low motivation"
+      ],
+      "meaning": "An idea may lack energy or the conditions to grow. Protect the spark while deciding whether it needs rest, refinement, or a smaller beginning.",
+      "reflection": "What would help a stalled idea take one manageable step?",
+      "rules": ""
+    }
   },
   {
     "id": "wands-2",
@@ -333,7 +563,17 @@
     ],
     "meaning": "Balance competing needs and choose a workable rhythm. The suit of Wands brings this theme to creativity, motivation, and action.",
     "reflection": "How does balance show up in your creativity, motivation, and action?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Fear of expansion",
+        "Unclear plans",
+        "Playing safe"
+      ],
+      "meaning": "Planning may be circling without commitment, or a familiar route may be limiting your view. Explore possibilities before choosing a direction.",
+      "reflection": "Which possibility have you ruled out too quickly?",
+      "rules": ""
+    }
   },
   {
     "id": "wands-3",
@@ -347,7 +587,17 @@
     ],
     "meaning": "Shared effort and early growth are coming into focus. The suit of Wands brings this theme to creativity, motivation, and action.",
     "reflection": "How does growth show up in your creativity, motivation, and action?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Delayed progress",
+        "Limited outlook",
+        "Reassessment"
+      ],
+      "meaning": "The return on your efforts may be slower than expected. Revisit assumptions and prepare for progress that arrives differently.",
+      "reflection": "What does this delay invite you to reconsider?",
+      "rules": ""
+    }
   },
   {
     "id": "wands-4",
@@ -361,7 +611,17 @@
     ],
     "meaning": "Consider the support and limitations of your current structure. The suit of Wands brings this theme to creativity, motivation, and action.",
     "reflection": "How does stability show up in your creativity, motivation, and action?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Unsettled home",
+        "Interrupted celebration",
+        "Belonging"
+      ],
+      "meaning": "A milestone or shared space may not feel as secure as it looks. Attend to the relationships and foundations behind the celebration.",
+      "reflection": "What would make your shared space feel more welcoming?",
+      "rules": ""
+    }
   },
   {
     "id": "wands-5",
@@ -375,7 +635,17 @@
     ],
     "meaning": "A challenge invites you to reconsider your response. The suit of Wands brings this theme to creativity, motivation, and action.",
     "reflection": "How does challenge show up in your creativity, motivation, and action?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Avoided conflict",
+        "Hidden tension",
+        "Resolution"
+      ],
+      "meaning": "Disagreement may be suppressed or beginning to settle. Make room for clear differences without turning them into a contest.",
+      "reflection": "Which tension needs a calm and direct conversation?",
+      "rules": ""
+    }
   },
   {
     "id": "wands-6",
@@ -389,7 +659,17 @@
     ],
     "meaning": "Notice how giving, receiving, and past experience shape the present. The suit of Wands brings this theme to creativity, motivation, and action.",
     "reflection": "How does exchange show up in your creativity, motivation, and action?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Unrecognized effort",
+        "Private success",
+        "Need for approval"
+      ],
+      "meaning": "Recognition may be missing, or praise may be carrying too much weight. Measure progress by your values as well as others response.",
+      "reflection": "What achievement deserves acknowledgment even without applause?",
+      "rules": ""
+    }
   },
   {
     "id": "wands-7",
@@ -403,7 +683,17 @@
     ],
     "meaning": "Step back and assess your options before committing. The suit of Wands brings this theme to creativity, motivation, and action.",
     "reflection": "How does assessment show up in your creativity, motivation, and action?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Overwhelm",
+        "Defensiveness",
+        "Choosing battles"
+      ],
+      "meaning": "Holding your ground may be exhausting, or defensiveness may be obscuring the real issue. Decide which stand is worth your energy.",
+      "reflection": "Which struggle can you release without abandoning yourself?",
+      "rules": ""
+    }
   },
   {
     "id": "wands-8",
@@ -417,7 +707,17 @@
     ],
     "meaning": "Focused movement or practice can carry you forward. The suit of Wands brings this theme to creativity, motivation, and action.",
     "reflection": "How does movement show up in your creativity, motivation, and action?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Delays",
+        "Mixed signals",
+        "Haste"
+      ],
+      "meaning": "Momentum may be blocked by unclear communication or rushed decisions. Clarify the next step before increasing speed.",
+      "reflection": "What message or plan needs to become clearer?",
+      "rules": ""
+    }
   },
   {
     "id": "wands-9",
@@ -431,7 +731,17 @@
     ],
     "meaning": "Recognize what you have cultivated and what still needs attention. The suit of Wands brings this theme to creativity, motivation, and action.",
     "reflection": "How does fulfillment show up in your creativity, motivation, and action?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Fatigue",
+        "Guardedness",
+        "Thin reserves"
+      ],
+      "meaning": "Persistence may be drawing on reserves that need renewal. Protection is useful, but constant vigilance can become its own burden.",
+      "reflection": "What support would let you lower your guard a little?",
+      "rules": ""
+    }
   },
   {
     "id": "wands-10",
@@ -445,7 +755,17 @@
     ],
     "meaning": "A cycle is reaching its full expression; consider what comes next. The suit of Wands brings this theme to creativity, motivation, and action.",
     "reflection": "How does completion show up in your creativity, motivation, and action?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Releasing burdens",
+        "Overload",
+        "Delegation"
+      ],
+      "meaning": "Too much responsibility may be concentrating in your hands. Put down what is unnecessary and ask others to carry their share.",
+      "reflection": "Which task no longer needs to be yours alone?",
+      "rules": ""
+    }
   },
   {
     "id": "wands-11",
@@ -459,7 +779,17 @@
     ],
     "meaning": "Approach this area with curiosity and a willingness to learn. The suit of Wands brings this theme to creativity, motivation, and action.",
     "reflection": "How does curiosity show up in your creativity, motivation, and action?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Unfocused enthusiasm",
+        "Setbacks",
+        "Tentative exploration"
+      ],
+      "meaning": "Curiosity may be strong while follow-through is uncertain. Treat an early setback as information and choose one experiment to finish.",
+      "reflection": "What small experiment can you follow through on?",
+      "rules": ""
+    }
   },
   {
     "id": "wands-12",
@@ -473,7 +803,17 @@
     ],
     "meaning": "Pursue your intention while checking your pace and direction. The suit of Wands brings this theme to creativity, motivation, and action.",
     "reflection": "How does pursuit show up in your creativity, motivation, and action?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Impulsiveness",
+        "Frustration",
+        "Burnout"
+      ],
+      "meaning": "Urgency can turn enthusiasm into reckless movement or exhaustion. Give your energy a direction and a pace you can sustain.",
+      "reflection": "Where would slowing down improve your next action?",
+      "rules": ""
+    }
   },
   {
     "id": "wands-13",
@@ -487,7 +827,17 @@
     ],
     "meaning": "Bring thoughtful care and mature understanding to this area. The suit of Wands brings this theme to creativity, motivation, and action.",
     "reflection": "How does care show up in your creativity, motivation, and action?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Insecurity",
+        "Dimming confidence",
+        "Reclaiming warmth"
+      ],
+      "meaning": "Self-comparison or depleted energy may be muting your presence. Reconnect with confidence that does not depend on commanding attention.",
+      "reflection": "What helps you feel at home in your own energy?",
+      "rules": ""
+    }
   },
   {
     "id": "wands-14",
@@ -501,7 +851,17 @@
     ],
     "meaning": "Lead with responsibility, experience, and a clear sense of purpose. The suit of Wands brings this theme to creativity, motivation, and action.",
     "reflection": "How does leadership show up in your creativity, motivation, and action?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Overbearing leadership",
+        "Unclear vision",
+        "Impatience"
+      ],
+      "meaning": "Ambition may be outrunning care, or a vision may lack grounding. Lead with listening and commitments you can actually keep.",
+      "reflection": "How can your leadership make room for other voices?",
+      "rules": ""
+    }
   },
   {
     "id": "cups-1",
@@ -515,7 +875,17 @@
     ],
     "meaning": "A fresh possibility is emerging. The suit of Cups brings this theme to feelings, relationships, and imagination.",
     "reflection": "How does beginnings show up in your feelings, relationships, and imagination?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Emotional depletion",
+        "Blocked expression",
+        "Self-care"
+      ],
+      "meaning": "Feelings may be held back or poured out without renewal. Care for your own emotional needs before asking them to sustain others.",
+      "reflection": "What feeling needs a safe place to be expressed?",
+      "rules": ""
+    }
   },
   {
     "id": "cups-2",
@@ -529,7 +899,17 @@
     ],
     "meaning": "Balance competing needs and choose a workable rhythm. The suit of Cups brings this theme to feelings, relationships, and imagination.",
     "reflection": "How does balance show up in your feelings, relationships, and imagination?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Disconnection",
+        "Unequal exchange",
+        "Repair"
+      ],
+      "meaning": "A relationship may need more honesty, reciprocity, or room for difference. Reconnection begins with recognizing the imbalance.",
+      "reflection": "What would make this exchange more mutual?",
+      "rules": ""
+    }
   },
   {
     "id": "cups-3",
@@ -543,7 +923,17 @@
     ],
     "meaning": "Shared effort and early growth are coming into focus. The suit of Cups brings this theme to feelings, relationships, and imagination.",
     "reflection": "How does growth show up in your feelings, relationships, and imagination?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Social strain",
+        "Overindulgence",
+        "Exclusion"
+      ],
+      "meaning": "A group dynamic may be draining rather than supportive. Reconsider how you celebrate, connect, and include one another.",
+      "reflection": "Which connection feels nourishing rather than obligatory?",
+      "rules": ""
+    }
   },
   {
     "id": "cups-4",
@@ -557,7 +947,17 @@
     ],
     "meaning": "Consider the support and limitations of your current structure. The suit of Cups brings this theme to feelings, relationships, and imagination.",
     "reflection": "How does stability show up in your feelings, relationships, and imagination?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Renewed interest",
+        "Restlessness",
+        "Opening up"
+      ],
+      "meaning": "A period of disengagement may be ending, or restlessness may be urging movement. Notice an available invitation without taking it only to escape discomfort.",
+      "reflection": "What opportunity are you ready to look at again?",
+      "rules": ""
+    }
   },
   {
     "id": "cups-5",
@@ -571,7 +971,17 @@
     ],
     "meaning": "A challenge invites you to reconsider your response. The suit of Cups brings this theme to feelings, relationships, and imagination.",
     "reflection": "How does challenge show up in your feelings, relationships, and imagination?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Acceptance",
+        "Recovery",
+        "Lingering grief"
+      ],
+      "meaning": "Loss may be making room for acceptance without disappearing. Let recovery coexist with grief and notice the support that remains.",
+      "reflection": "What are you ready to receive while still honoring what was lost?",
+      "rules": ""
+    }
   },
   {
     "id": "cups-6",
@@ -585,7 +995,17 @@
     ],
     "meaning": "Notice how giving, receiving, and past experience shape the present. The suit of Cups brings this theme to feelings, relationships, and imagination.",
     "reflection": "How does exchange show up in your feelings, relationships, and imagination?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Living in the past",
+        "Growing up",
+        "Old patterns"
+      ],
+      "meaning": "Memory may offer comfort while keeping an old role in place. Bring what is valuable forward without needing the past to return.",
+      "reflection": "Which old pattern are you ready to outgrow?",
+      "rules": ""
+    }
   },
   {
     "id": "cups-7",
@@ -599,7 +1019,17 @@
     ],
     "meaning": "Step back and assess your options before committing. The suit of Cups brings this theme to feelings, relationships, and imagination.",
     "reflection": "How does assessment show up in your feelings, relationships, and imagination?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Narrowing choices",
+        "Confusion",
+        "Reality checking"
+      ],
+      "meaning": "Too many possibilities may be giving way to a clearer choice, or wishful thinking may still cloud it. Test what is feasible before committing.",
+      "reflection": "Which option holds up when you look at its practical demands?",
+      "rules": ""
+    }
   },
   {
     "id": "cups-8",
@@ -613,7 +1043,17 @@
     ],
     "meaning": "Focused movement or practice can carry you forward. The suit of Cups brings this theme to feelings, relationships, and imagination.",
     "reflection": "How does movement show up in your feelings, relationships, and imagination?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Fear of leaving",
+        "Returning",
+        "Unfinished departure"
+      ],
+      "meaning": "You may be hesitating at a departure or reconsidering what leaving would mean. Distinguish a thoughtful return from staying through fear.",
+      "reflection": "What is keeping you in a situation you have outgrown?",
+      "rules": ""
+    }
   },
   {
     "id": "cups-9",
@@ -627,7 +1067,17 @@
     ],
     "meaning": "Recognize what you have cultivated and what still needs attention. The suit of Cups brings this theme to feelings, relationships, and imagination.",
     "reflection": "How does fulfillment show up in your feelings, relationships, and imagination?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Unsatisfying success",
+        "Excess",
+        "Deeper needs"
+      ],
+      "meaning": "An achieved wish may not satisfy the need beneath it. Enjoy what you have while making space for a more honest definition of fulfillment.",
+      "reflection": "What did you hope this achievement would give you?",
+      "rules": ""
+    }
   },
   {
     "id": "cups-10",
@@ -641,7 +1091,17 @@
     ],
     "meaning": "A cycle is reaching its full expression; consider what comes next. The suit of Cups brings this theme to feelings, relationships, and imagination.",
     "reflection": "How does completion show up in your feelings, relationships, and imagination?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Family tension",
+        "Unrealistic ideals",
+        "Misaligned belonging"
+      ],
+      "meaning": "The picture of harmony may be concealing unmet needs or different values. Build belonging through honest relationships rather than a perfect image.",
+      "reflection": "What truth would help your shared life feel more authentic?",
+      "rules": ""
+    }
   },
   {
     "id": "cups-11",
@@ -655,7 +1115,17 @@
     ],
     "meaning": "Approach this area with curiosity and a willingness to learn. The suit of Cups brings this theme to feelings, relationships, and imagination.",
     "reflection": "How does curiosity show up in your feelings, relationships, and imagination?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Emotional immaturity",
+        "Creative hesitation",
+        "Sensitivity"
+      ],
+      "meaning": "A feeling or idea may need a gentler, more grounded expression. Curiosity can help you hear it without reacting immediately.",
+      "reflection": "How can you express a tender feeling with care?",
+      "rules": ""
+    }
   },
   {
     "id": "cups-12",
@@ -669,7 +1139,17 @@
     ],
     "meaning": "Pursue your intention while checking your pace and direction. The suit of Cups brings this theme to feelings, relationships, and imagination.",
     "reflection": "How does pursuit show up in your feelings, relationships, and imagination?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Idealization",
+        "Disappointment",
+        "Mixed intentions"
+      ],
+      "meaning": "Romance or imagination may be promising more than action supports. Bring your hopes into conversation with what is actually being offered.",
+      "reflection": "Where do actions differ from the story you want to believe?",
+      "rules": ""
+    }
   },
   {
     "id": "cups-13",
@@ -683,7 +1163,17 @@
     ],
     "meaning": "Bring thoughtful care and mature understanding to this area. The suit of Cups brings this theme to feelings, relationships, and imagination.",
     "reflection": "How does care show up in your feelings, relationships, and imagination?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Emotional overwhelm",
+        "Blurred boundaries",
+        "Self-neglect"
+      ],
+      "meaning": "Attunement to others may be obscuring your own needs. Compassion works better when it includes clear emotional boundaries.",
+      "reflection": "Which feeling belongs to you, and which are you carrying for someone else?",
+      "rules": ""
+    }
   },
   {
     "id": "cups-14",
@@ -697,7 +1187,17 @@
     ],
     "meaning": "Lead with responsibility, experience, and a clear sense of purpose. The suit of Cups brings this theme to feelings, relationships, and imagination.",
     "reflection": "How does leadership show up in your feelings, relationships, and imagination?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Suppressed feelings",
+        "Emotional control",
+        "Unsteady calm"
+      ],
+      "meaning": "Composure may conceal feelings that need attention, or emotions may be driving decisions unseen. Seek steadiness through acknowledgment rather than suppression.",
+      "reflection": "What feeling needs to be named before you respond?",
+      "rules": ""
+    }
   },
   {
     "id": "swords-1",
@@ -711,7 +1211,17 @@
     ],
     "meaning": "A fresh possibility is emerging. The suit of Swords brings this theme to thought, communication, and decisions.",
     "reflection": "How does beginnings show up in your thought, communication, and decisions?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Clouded judgment",
+        "Miscommunication",
+        "Unclear ideas"
+      ],
+      "meaning": "A thought may be sharp but incomplete, or communication may be losing its point. Check facts and simplify what you need to say.",
+      "reflection": "What needs clarification before you call it certain?",
+      "rules": ""
+    }
   },
   {
     "id": "swords-2",
@@ -725,7 +1235,17 @@
     ],
     "meaning": "Balance competing needs and choose a workable rhythm. The suit of Swords brings this theme to thought, communication, and decisions.",
     "reflection": "How does balance show up in your thought, communication, and decisions?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Indecision",
+        "Information overload",
+        "Avoided choice"
+      ],
+      "meaning": "A postponed decision may now be demanding attention. Gather what matters and accept that some uncertainty will remain.",
+      "reflection": "Which fact or value would help you make this choice?",
+      "rules": ""
+    }
   },
   {
     "id": "swords-3",
@@ -739,7 +1259,17 @@
     ],
     "meaning": "Shared effort and early growth are coming into focus. The suit of Swords brings this theme to thought, communication, and decisions.",
     "reflection": "How does growth show up in your thought, communication, and decisions?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Healing",
+        "Lingering hurt",
+        "Releasing resentment"
+      ],
+      "meaning": "Pain may be ready for expression or repair, though recovery takes time. Let honesty support healing without requiring you to rush forgiveness.",
+      "reflection": "What would help you tend to a hurt that remains?",
+      "rules": ""
+    }
   },
   {
     "id": "swords-4",
@@ -753,7 +1283,17 @@
     ],
     "meaning": "Consider the support and limitations of your current structure. The suit of Swords brings this theme to thought, communication, and decisions.",
     "reflection": "How does stability show up in your thought, communication, and decisions?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Restlessness",
+        "Exhaustion",
+        "Returning to action"
+      ],
+      "meaning": "Rest may have been interrupted, or you may be preparing to reengage. Choose a pace that does not mistake depletion for readiness.",
+      "reflection": "Do you need a next step or more recovery first?",
+      "rules": ""
+    }
   },
   {
     "id": "swords-5",
@@ -767,7 +1307,17 @@
     ],
     "meaning": "A challenge invites you to reconsider your response. The suit of Swords brings this theme to thought, communication, and decisions.",
     "reflection": "How does challenge show up in your thought, communication, and decisions?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Reconciliation",
+        "Unresolved conflict",
+        "Cost of winning"
+      ],
+      "meaning": "A conflict may be ending while its consequences remain. Consider repair and boundaries rather than another attempt to prove who was right.",
+      "reflection": "What would resolving this conflict require beyond winning it?",
+      "rules": ""
+    }
   },
   {
     "id": "swords-6",
@@ -781,7 +1331,17 @@
     ],
     "meaning": "Notice how giving, receiving, and past experience shape the present. The suit of Swords brings this theme to thought, communication, and decisions.",
     "reflection": "How does exchange show up in your thought, communication, and decisions?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Resisted transition",
+        "Unfinished business",
+        "Feeling stuck"
+      ],
+      "meaning": "Movement toward calmer ground may be delayed by unresolved concerns. Address what you can carry differently rather than expecting a clean escape.",
+      "reflection": "What unfinished matter is making this transition harder?",
+      "rules": ""
+    }
   },
   {
     "id": "swords-7",
@@ -795,7 +1355,17 @@
     ],
     "meaning": "Step back and assess your options before committing. The suit of Swords brings this theme to thought, communication, and decisions.",
     "reflection": "How does assessment show up in your thought, communication, and decisions?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Disclosure",
+        "Self-deception",
+        "Taking responsibility"
+      ],
+      "meaning": "A hidden approach may be coming to light, or avoidance may no longer work. Honest acknowledgment can create a more sustainable path.",
+      "reflection": "Where would being direct reduce the need for concealment?",
+      "rules": ""
+    }
   },
   {
     "id": "swords-8",
@@ -809,7 +1379,17 @@
     ],
     "meaning": "Focused movement or practice can carry you forward. The suit of Swords brings this theme to thought, communication, and decisions.",
     "reflection": "How does movement show up in your thought, communication, and decisions?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Reclaiming agency",
+        "Inner limits",
+        "Release"
+      ],
+      "meaning": "A restriction may be loosening as you question its assumptions. Identify one available choice without denying the constraints that remain.",
+      "reflection": "Which limit can you test with a small action?",
+      "rules": ""
+    }
   },
   {
     "id": "swords-9",
@@ -823,7 +1403,17 @@
     ],
     "meaning": "Recognize what you have cultivated and what still needs attention. The suit of Swords brings this theme to thought, communication, and decisions.",
     "reflection": "How does fulfillment show up in your thought, communication, and decisions?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Seeking support",
+        "Persistent worry",
+        "Recovery"
+      ],
+      "meaning": "Worry may be easing or becoming too heavy to carry alone. Bring fears into a supportive conversation and distinguish possibilities from facts.",
+      "reflection": "What concern could you share instead of holding alone?",
+      "rules": ""
+    }
   },
   {
     "id": "swords-10",
@@ -837,7 +1427,17 @@
     ],
     "meaning": "A cycle is reaching its full expression; consider what comes next. The suit of Swords brings this theme to thought, communication, and decisions.",
     "reflection": "How does completion show up in your thought, communication, and decisions?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Survival",
+        "Slow recovery",
+        "Resistance to endings"
+      ],
+      "meaning": "The hardest point may be passing, though an ending can still be difficult to accept. Let recovery begin without requiring an immediate new chapter.",
+      "reflection": "What small sign of recovery can you protect?",
+      "rules": ""
+    }
   },
   {
     "id": "swords-11",
@@ -851,7 +1451,17 @@
     ],
     "meaning": "Approach this area with curiosity and a willingness to learn. The suit of Swords brings this theme to thought, communication, and decisions.",
     "reflection": "How does curiosity show up in your thought, communication, and decisions?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Hasty words",
+        "Unverified claims",
+        "Scattered attention"
+      ],
+      "meaning": "Curiosity can become suspicion or impulsive speech when facts are incomplete. Pause to check what you know before passing it on.",
+      "reflection": "Which claim needs verification before you act on it?",
+      "rules": ""
+    }
   },
   {
     "id": "swords-12",
@@ -865,7 +1475,17 @@
     ],
     "meaning": "Pursue your intention while checking your pace and direction. The suit of Swords brings this theme to thought, communication, and decisions.",
     "reflection": "How does pursuit show up in your thought, communication, and decisions?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Reckless certainty",
+        "Impatience",
+        "Misdirected effort"
+      ],
+      "meaning": "A forceful approach may be moving faster than understanding. Choose accuracy and proportion over the urge to charge ahead.",
+      "reflection": "What could change your mind before you commit?",
+      "rules": ""
+    }
   },
   {
     "id": "swords-13",
@@ -879,7 +1499,17 @@
     ],
     "meaning": "Bring thoughtful care and mature understanding to this area. The suit of Swords brings this theme to thought, communication, and decisions.",
     "reflection": "How does care show up in your thought, communication, and decisions?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Harsh judgment",
+        "Guardedness",
+        "Unspoken hurt"
+      ],
+      "meaning": "Discernment may be hardened by pain or a need to stay protected. Keep your boundaries while allowing room for context and compassion.",
+      "reflection": "Where can you be clear without being cutting?",
+      "rules": ""
+    }
   },
   {
     "id": "swords-14",
@@ -893,7 +1523,17 @@
     ],
     "meaning": "Lead with responsibility, experience, and a clear sense of purpose. The suit of Swords brings this theme to thought, communication, and decisions.",
     "reflection": "How does leadership show up in your thought, communication, and decisions?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Misused authority",
+        "Rigid thinking",
+        "Detached judgment"
+      ],
+      "meaning": "Reason or expertise may be used to control rather than illuminate. Examine assumptions and invite accountability into your decisions.",
+      "reflection": "Whose perspective is missing from your judgment?",
+      "rules": ""
+    }
   },
   {
     "id": "pentacles-1",
@@ -907,7 +1547,17 @@
     ],
     "meaning": "A fresh possibility is emerging. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
     "reflection": "How does beginnings show up in your work, resources, and everyday foundations?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Missed opportunity",
+        "Unsteady foundations",
+        "Delay"
+      ],
+      "meaning": "A practical opportunity may need better preparation or a realistic assessment of resources. Begin with the conditions that make growth possible.",
+      "reflection": "What foundation needs attention before you invest?",
+      "rules": ""
+    }
   },
   {
     "id": "pentacles-2",
@@ -921,7 +1571,17 @@
     ],
     "meaning": "Balance competing needs and choose a workable rhythm. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
     "reflection": "How does balance show up in your work, resources, and everyday foundations?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Overcommitment",
+        "Imbalance",
+        "Disorganization"
+      ],
+      "meaning": "Too many demands may be exceeding your ability to adapt. Simplify priorities and give each commitment a realistic share of time.",
+      "reflection": "What can you reduce to make room for what matters?",
+      "rules": ""
+    }
   },
   {
     "id": "pentacles-3",
@@ -935,7 +1595,17 @@
     ],
     "meaning": "Shared effort and early growth are coming into focus. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
     "reflection": "How does growth show up in your work, resources, and everyday foundations?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Poor coordination",
+        "Uneven effort",
+        "Learning gaps"
+      ],
+      "meaning": "Shared work may suffer from unclear roles or a missing skill. Good collaboration requires explicit expectations and respect for each contribution.",
+      "reflection": "What agreement would help this team work better?",
+      "rules": ""
+    }
   },
   {
     "id": "pentacles-4",
@@ -949,7 +1619,17 @@
     ],
     "meaning": "Consider the support and limitations of your current structure. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
     "reflection": "How does stability show up in your work, resources, and everyday foundations?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Clinging",
+        "Overspending",
+        "Releasing control"
+      ],
+      "meaning": "Your relationship with security may be too tight or too loose. Consider what enough means before either holding everything or letting it all go.",
+      "reflection": "What resource can you manage with less fear?",
+      "rules": ""
+    }
   },
   {
     "id": "pentacles-5",
@@ -963,7 +1643,17 @@
     ],
     "meaning": "A challenge invites you to reconsider your response. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
     "reflection": "How does challenge show up in your work, resources, and everyday foundations?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Receiving help",
+        "Recovery",
+        "Persistent scarcity"
+      ],
+      "meaning": "Support or improvement may be available even while hardship continues. Look for practical help and a small route toward greater stability.",
+      "reflection": "What assistance are you ready to accept?",
+      "rules": ""
+    }
   },
   {
     "id": "pentacles-6",
@@ -977,7 +1667,17 @@
     ],
     "meaning": "Notice how giving, receiving, and past experience shape the present. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
     "reflection": "How does exchange show up in your work, resources, and everyday foundations?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Unequal giving",
+        "Strings attached",
+        "Resource boundaries"
+      ],
+      "meaning": "An exchange may carry unequal power or hidden expectations. Clarify what is offered, what is owed, and what you can freely give.",
+      "reflection": "Where does generosity need a clearer boundary?",
+      "rules": ""
+    }
   },
   {
     "id": "pentacles-7",
@@ -991,7 +1691,17 @@
     ],
     "meaning": "Step back and assess your options before committing. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
     "reflection": "How does assessment show up in your work, resources, and everyday foundations?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Impatience",
+        "Low returns",
+        "Reevaluating effort"
+      ],
+      "meaning": "An investment may not be returning what you hoped. Review the evidence and decide whether to adjust, wait, or redirect your effort.",
+      "reflection": "What tells you this effort is still worth continuing?",
+      "rules": ""
+    }
   },
   {
     "id": "pentacles-8",
@@ -1005,7 +1715,17 @@
     ],
     "meaning": "Focused movement or practice can carry you forward. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
     "reflection": "How does movement show up in your work, resources, and everyday foundations?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Unfocused practice",
+        "Perfectionism",
+        "Loss of purpose"
+      ],
+      "meaning": "Work may have become repetitive without learning, or perfectionism may prevent completion. Return to deliberate practice with a clear purpose.",
+      "reflection": "Which skill deserves focused practice rather than more hours?",
+      "rules": ""
+    }
   },
   {
     "id": "pentacles-9",
@@ -1019,7 +1739,17 @@
     ],
     "meaning": "Recognize what you have cultivated and what still needs attention. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
     "reflection": "How does fulfillment show up in your work, resources, and everyday foundations?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Dependence",
+        "Overwork",
+        "Uncertain self-worth"
+      ],
+      "meaning": "Comfort or independence may feel less secure than it appears. Examine what supports your life without making your worth depend on productivity.",
+      "reflection": "What would make your independence more sustainable?",
+      "rules": ""
+    }
   },
   {
     "id": "pentacles-10",
@@ -1033,7 +1763,17 @@
     ],
     "meaning": "A cycle is reaching its full expression; consider what comes next. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
     "reflection": "How does completion show up in your work, resources, and everyday foundations?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Unstable legacy",
+        "Family expectations",
+        "Changing security"
+      ],
+      "meaning": "A long-term arrangement may be strained by conflicting values or material uncertainty. Discuss what security should mean for everyone involved.",
+      "reflection": "Which inherited expectation no longer supports your future?",
+      "rules": ""
+    }
   },
   {
     "id": "pentacles-11",
@@ -1047,7 +1787,17 @@
     ],
     "meaning": "Approach this area with curiosity and a willingness to learn. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
     "reflection": "How does curiosity show up in your work, resources, and everyday foundations?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Procrastination",
+        "Unrealistic plans",
+        "Learning through mistakes"
+      ],
+      "meaning": "A practical goal may need attention to the basics. Replace vague intention with a small task and use mistakes as information.",
+      "reflection": "What concrete action can you finish today?",
+      "rules": ""
+    }
   },
   {
     "id": "pentacles-12",
@@ -1061,7 +1811,17 @@
     ],
     "meaning": "Pursue your intention while checking your pace and direction. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
     "reflection": "How does pursuit show up in your work, resources, and everyday foundations?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Stagnation",
+        "Rigid routines",
+        "Careless effort"
+      ],
+      "meaning": "Consistency may have become inflexibility, or a neglected routine may be undermining progress. Adjust your habits without abandoning useful discipline.",
+      "reflection": "Which routine needs renewal rather than more repetition?",
+      "rules": ""
+    }
   },
   {
     "id": "pentacles-13",
@@ -1075,7 +1835,17 @@
     ],
     "meaning": "Bring thoughtful care and mature understanding to this area. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
     "reflection": "How does care show up in your work, resources, and everyday foundations?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Self-neglect",
+        "Unbalanced care",
+        "Resource strain"
+      ],
+      "meaning": "Caring for others or maintaining comfort may be crowding out your own stability. Make practical care include your time, body, and resources.",
+      "reflection": "What ordinary need of yours has gone unattended?",
+      "rules": ""
+    }
   },
   {
     "id": "pentacles-14",
@@ -1089,7 +1859,16 @@
     ],
     "meaning": "Lead with responsibility, experience, and a clear sense of purpose. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
     "reflection": "How does leadership show up in your work, resources, and everyday foundations?",
-    "rules": ""
+    "rules": "",
+    "inverted": {
+      "keywords": [
+        "Material fixation",
+        "Insecure control",
+        "Poor stewardship"
+      ],
+      "meaning": "Success or security may be pursued at the expense of care and flexibility. Use resources responsibly and question what you are trying to prove.",
+      "reflection": "How could your resources serve more than a need for control?",
+      "rules": ""
+    }
   }
 ]
-

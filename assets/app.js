@@ -5,12 +5,13 @@ function read(key){try{return localStorage.getItem(key);}catch{storageAvailable=
 const desktop=matchMedia('(min-width:681px)');
 let clickToDraw=read('tarot-desk-click-to-draw')!=='false';
 let swapMobile=read('tarot-desk-swap-mobile')==='true';
+let allowInverted=read('tarot-desk-allow-inverted')==='true';
 function updateCardAction(){
  if(!state)return;
  const draws=desktop.matches?clickToDraw:(swapMobile||state.current===null);
  const enabled=draws&&state.remaining.length>0;
  $('card').disabled=draws?!enabled:desktop.matches;
- $('card').setAttribute('aria-label',desktop.matches?(enabled?'Draw next card':(current()?.name||'Tarot deck')):(draws?(enabled?'Draw next card':'Deck complete'):`Open information for ${current().name}`));
+ $('card').setAttribute('aria-label',desktop.matches?(enabled?'Draw next card':(current()?cardName(current()):'Tarot deck')):(draws?(enabled?'Draw next card':'Deck complete'):`Open information for ${cardName(current())}`));
  $('draw').disabled=(!desktop.matches&&swapMobile)?false:!state.remaining.length;
  $('draw').textContent=(!desktop.matches&&swapMobile)?'Card notes':(state.remaining.length?'Draw a card':'Deck complete');
 }
@@ -18,23 +19,33 @@ desktop.addEventListener('change',updateCardAction);
 function save(){try{localStorage.setItem(storageKey,JSON.stringify(state));}catch{storageAvailable=false;}}
 function el(tag,text,className){const node=document.createElement(tag);node.textContent=text;if(className)node.className=className;return node;}
 function current(){return cards.find(c=>c.id===state.current);}
+function isInverted(id){return state?.orientations?.[id]===true;}
+function cardName(c){return c.name+(isInverted(c.id)?' (Inverted)':'');}
 function renderDiscards(){
  const pile=$('discards');pile.replaceChildren();pile.hidden=!state.discards.length;
  pile.setAttribute('aria-label',`Open discard pile: ${state.discards.length} discarded cards`);
  state.discards.slice(-3).forEach((id,index,array)=>{
   const c=cards.find(card=>card.id===id),image=document.createElement('img');
   image.src=c.image;image.alt='';image.setAttribute('aria-hidden','true');
-  image.style.setProperty('--fan-step',array.length-index);image.style.zIndex=index;
-  pile.append(image);
+  image.classList.toggle('inverted',isInverted(id));
+  const frame=document.createElement('div');frame.className='discard-card';
+  frame.style.setProperty('--fan-step',array.length-index);frame.style.zIndex=index;
+  frame.append(image);pile.append(frame);
  });
 }
-function info(target){target.replaceChildren();const c=current();target.append(el('p',c?c.group:'YOUR NEXT CHAPTER','eyebrow'),el('h2',c?c.name:'A shuffled deck. An open mind.'));if(!c){target.append(el('p','Take a breath and draw your first card. Each draw stays on the table until you draw again. Previous cards move to the discard pile.'));return;}
- const tags=el('div','','tags');c.keywords.forEach(k=>tags.append(el('span',k,'tag')));target.append(tags,el('h3','Meaning'),el('p',c.meaning),el('h3','Reflection'),el('p',c.reflection),el('h3','Rules / notes'),el('p',c.rules||'No additional rules for this card.'));}
-function render(){const c=current();if(!c)$("card").setAttribute("aria-label","Open card information");$('card-image').hidden=!c;$('card').querySelector('.card-back').hidden=!!c;if(c){$('card-image').src=c.image;$('card-image').alt=c.name;$('card').setAttribute('aria-label',`Open information for ${c.name}`);}info($('info'));renderDiscards();updateCardAction();$('status').textContent=`${state.remaining.length} remaining · ${state.discards.length} discarded${c?' · 1 on the table':''}${storageAvailable?' · Saved on this browser':' · Storage unavailable: this session only'}`;}
+function info(target){
+ target.replaceChildren();const c=current();
+ target.append(el('p',c?c.group:'YOUR NEXT CHAPTER','eyebrow'),el('h2',c?cardName(c):'A shuffled deck. An open mind.'));
+ if(!c){target.append(el('p','Take a breath and draw your first card. Each draw stays on the table until you draw again. Previous cards move to the discard pile.'));return;}
+ const inverted=isInverted(c.id),notes=inverted?c.inverted:c;
+ const tags=el('div','','tags');(notes?.keywords||[]).forEach(k=>tags.append(el('span',k,'tag')));
+ target.append(tags,el('h3',inverted?'Inverted meaning':'Meaning'),el('p',notes?.meaning||(inverted?'No inverted meaning configured for this card.':'')),el('h3','Reflection'),el('p',notes?.reflection||(inverted?'No inverted reflection configured for this card.':'')),el('h3','Rules / notes'),el('p',notes?.rules||(inverted?'No additional inverted rules for this card.':'No additional rules for this card.')));
+}
+function render(){const c=current();if(!c)$("card").setAttribute("aria-label","Open card information");$('card-image').hidden=!c;$('card-image').classList.toggle('inverted',!!c&&isInverted(c.id));$('card').querySelector('.card-back').hidden=!!c;if(c){$('card-image').src=c.image;$('card-image').alt=cardName(c);$('card').setAttribute('aria-label',`Open information for ${cardName(c)}`);}info($('info'));renderDiscards();updateCardAction();$('status').textContent=`${state.remaining.length} remaining · ${state.discards.length} discarded${c?' · 1 on the table':''}${storageAvailable?'':' · Storage unavailable: this session only'}`;}
 function open(label){$('modal-label').textContent=label;$('modal-body').replaceChildren();if(!$('modal').open)$('modal').showModal();return $('modal-body');}
-function inventory(){const body=open('YOUR DECK');body.append(el('h2','A place for every card'));const counts=el('div','','counts');counts.append(el('span',`${state.remaining.length} remaining`),el('span',`${state.discards.length} discarded`),el('span',`${state.current?1:0} on the table`));body.append(counts);if(current())body.append(el('p',`On the table: ${current().name}`));body.append(el('h3','Discard pile · newest first'));if(!state.discards.length)body.append(el('p','No discarded cards yet. Your current card moves here on the next draw.'));const list=el('ol','','pile-list');[...state.discards].reverse().forEach(id=>list.append(el('li',cards.find(c=>c.id===id).name)));body.append(list,el('p','The order of the remaining deck stays hidden until you draw.'));}
+function inventory(){const body=open('YOUR DECK');body.append(el('h2','A place for every card'));const counts=el('div','','counts');counts.append(el('span',`${state.remaining.length} remaining`),el('span',`${state.discards.length} discarded`),el('span',`${state.current?1:0} on the table`));body.append(counts);if(current())body.append(el('p',`On the table: ${cardName(current())}`));body.append(el('h3','Discard pile · newest first'));if(!state.discards.length)body.append(el('p','No discarded cards yet. Your current card moves here on the next draw.'));const list=el('ol','','pile-list');[...state.discards].reverse().forEach(id=>list.append(el('li',cardName(cards.find(c=>c.id===id)))));body.append(list,el('p','The order of the remaining deck stays hidden until you draw.'));}
 $('close').onclick=()=>$('modal').close();$('modal').addEventListener('click',e=>{if(e.target===$('modal')){const r=$('modal').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('modal').close();}});
-function drawCard(){if(!state||!state.remaining.length)return;state=TarotDeck.draw(state);save();render();}
+function drawCard(){if(!state||!state.remaining.length)return;state=TarotDeck.draw(state,allowInverted);save();render();}
 function showCardNotes(){if(!state)return;const body=open('CARD INFORMATION');info(body);const button=el('button','View discard pile & counts','primary');button.onclick=inventory;body.append(button);}
 $('draw').onclick=()=>{if(!desktop.matches&&swapMobile)showCardNotes();else drawCard();};
 $('card').onclick=()=>{if(!state)return;if(desktop.matches){if(clickToDraw)drawCard();return;}if(swapMobile||state.current===null){drawCard();return;}showCardNotes();};
@@ -56,6 +67,12 @@ $('settings').onclick=()=>{
  swapLabel.append(swapToggle,el('span','Swap draw button and rules interaction'));
  body.insertBefore(swapLabel,label.nextSibling);
  body.insertBefore(el('p','On mobile, enable this to tap the card to draw and use the button for notes.'),swapLabel.nextSibling);
+ const invertedLabel=el('label','','setting-toggle'),invertedToggle=document.createElement('input');
+ invertedToggle.type='checkbox';invertedToggle.checked=allowInverted;
+ invertedToggle.onchange=()=>{allowInverted=invertedToggle.checked;try{localStorage.setItem('tarot-desk-allow-inverted',String(allowInverted));}catch{storageAvailable=false;}state=TarotDeck.shuffle(cards.map(c=>c.id));save();render();};
+ invertedLabel.append(invertedToggle,el('span','Allow inverted cards (reshuffles deck)'));
+ body.insertBefore(invertedLabel,body.querySelector('h3'));
+ body.insertBefore(el('p','Changing this setting immediately reshuffles all 78 cards and clears the current card and discard pile. When enabled, each draw has a 50% chance of being inverted and shows its inverted meaning and notes.'),invertedLabel.nextSibling);
  const button=el('button','Shuffle the deck','primary');button.onclick=()=>{state=TarotDeck.shuffle(cards.map(c=>c.id));save();render();$('modal').close();};body.append(button);
 };
 const themes=[{id:'dusk',name:'Dusk'},{id:'ocean',name:'Ocean'},{id:'parchment',name:'Parchment'},{id:'sage',name:'Sage'}];

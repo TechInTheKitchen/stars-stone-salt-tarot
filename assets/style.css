@@ -46,7 +46,7 @@ html{scrollbar-gutter:stable}
  html{scrollbar-gutter:auto;overflow-x:clip}
  body{overflow-x:clip}
 }
-.discard-stack img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;border-radius:8px;background:var(--surface-2);box-shadow:0 8px 18px var(--shadow-color);transform-origin:50% 90%;transform:translateX(calc(var(--fan-step) * -7%)) rotate(calc(var(--fan-step) * -9deg))}
+.discard-stack .discard-card{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;border-radius:8px;background:var(--surface-2);box-shadow:0 8px 18px var(--shadow-color);transform-origin:50% 90%;transform:translateX(calc(var(--fan-step) * -7%)) rotate(calc(var(--fan-step) * -9deg))}
 @media(min-width:681px){
  .card-area{padding-left:20%;padding-block:24px}
  .card-hand{width:min(100%,calc(clamp(460px,calc(100dvh - 380px),900px) * .575));max-width:none}
@@ -132,10 +132,14 @@ footer b,.desk-credit b{color:var(--accent);padding:0 10px}
  footer{display:none}
  .desk-credit{display:block;text-align:center;font-size:10px;letter-spacing:.03em}
  .desk-credit b{padding:0 5px}
- .desk{padding:20px}
+ .desk{padding:20px 20px 10px}
  main{padding-bottom:16px}
  main{grid-template-rows:auto minmax(0,1fr)}
 }
 @media(max-width:680px) and (max-height:550px){main{grid-template-rows:minmax(0,1fr)}}
 .credit-link{color:inherit;text-decoration:none}
 .credit-link:hover{color:var(--accent);text-decoration:underline}
+
+/* Rotate artwork inside its frame so the discard fan keeps its position. */
+.discard-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;border-radius:8px}
+.card img.inverted,.discard-card img.inverted{transform:rotate(180deg)}

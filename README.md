@@ -18,9 +18,10 @@ The app is static HTML, CSS, and JavaScript, with no build step or external serv
 - On desktop, card information appears beside the artwork. Clicking the card also draws by default; Settings can disable that action.
 - On mobile, tapping the drawn card opens its information. Enable **Swap draw button and rules interaction** in Settings to tap the card to draw and use **Card notes** for information instead.
 - Tap or click the discard fan to view discarded cards and deck counts. Card information also includes a link to this view.
+- **Allow inverted cards** in Settings gives each draw a 50% chance of inversion and displays its matching notes. Changing this checkbox immediately reshuffles all 78 cards and clears the current card and discard pile. The warning appears beside the setting.
 - **Settings** provides themes, interaction preferences, and a shuffle action that resets the current card and discards. The header button switches between light and dark mode.
 
-Deck order, current card, discards, and preferences are saved in localStorage. Clearing browser data resets them. When storage is unavailable, the status reports that progress lasts only for the current session. Saved decks do not sync between browsers or devices.
+Deck order, current card, discards, card orientations, and preferences are saved in localStorage. Clearing browser data resets them. When storage is unavailable, the status reports that progress lasts only for the current session. Saved decks do not sync between browsers or devices.
 
 ## Customize the site
 
@@ -57,7 +58,7 @@ Edit [`assets/cards.json`](assets/cards.json) and refresh. Each card has `id`, `
 
 Keep all 78 IDs unique and stable so saved decks remain compatible. Artwork uses WebP files in `assets/cards/`; set each card's `image` to its matching file. Use valid JSON with double quotes and no trailing commas. Text is displayed as plain text.
 
-Meanings and reflection prompts are editable starting points. Put custom game rules in `rules`; an empty value displays “No additional rules for this card.” All cards draw upright.
+Meanings and reflection prompts are editable starting points. Put custom game rules in `rules`; an empty value displays “No additional rules for this card.” Cards draw upright by default. Each card also has an `inverted` object with its own `keywords`, `meaning`, `reflection`, and `rules`. These are editable starter interpretations, not fixed game rules. Blank inverted rules display “No additional inverted rules for this card.” Inverted cards rotate 180 degrees and retain their orientation in the discard pile and after reload. Existing saved decks without orientation data load as upright.
 
 ## Project files and verification
 
@@ -81,7 +82,7 @@ Run from the app folder:
 node tools/verify.cjs
 ```
 
-This checks all 78 card assets, unique draws, deck exhaustion, saved-state integrity, and shuffle reset.
+This checks all 78 card assets, unique draws, deck exhaustion, saved-state integrity, shuffle reset, inverted orientations, legacy saves, and inverted note fields.
 
 ## Credits and license
 
