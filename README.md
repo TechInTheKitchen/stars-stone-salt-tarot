@@ -17,7 +17,7 @@ The app is static HTML, CSS, and JavaScript, with no build step or external serv
 - **Draw a card** reveals the next card. The previous card joins the discard pile. Cards never repeat until you shuffle.
 - On desktop, card information appears beside the artwork. Clicking the card also draws by default; Settings can disable that action.
 - On mobile, tapping the drawn card opens its information. Enable **Swap draw button and rules interaction** in Settings to tap the card to draw and use **Card notes** for information instead.
-- Tap or click the discard fan to view discarded cards and deck counts. Card information also includes a link to this view.
+- Tap or click the discard fan to view discarded cards and deck counts. Select a card in the list to open its meanings, reflection, and rules in its saved upright or inverted orientation; use **Back to discard pile** to return. Card information also includes a link to this view.
 - **Allow inverted cards** in Settings gives each draw a 50% chance of inversion and displays its matching notes. Changing this checkbox immediately reshuffles all 78 cards and clears the current card and discard pile. The warning appears beside the setting.
 - **Settings** provides themes, interaction preferences, and a shuffle action that resets the current card and discards. The header button switches between light and dark mode.
 

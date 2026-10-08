@@ -33,8 +33,8 @@ function renderDiscards(){
   frame.append(image);pile.append(frame);
  });
 }
-function info(target){
- target.replaceChildren();const c=current();
+function info(target,c=current()){
+ target.replaceChildren();
  target.append(el('p',c?c.group:'YOUR NEXT CHAPTER','eyebrow'),el('h2',c?cardName(c):'A shuffled deck. An open mind.'));
  if(!c){target.append(el('p','Take a breath and draw your first card. Each draw stays on the table until you draw again. Previous cards move to the discard pile.'));return;}
  const inverted=isInverted(c.id),notes=inverted?c.inverted:c;
@@ -43,9 +43,16 @@ function info(target){
 }
 function render(){const c=current();if(!c)$("card").setAttribute("aria-label","Open card information");$('card-image').hidden=!c;$('card-image').classList.toggle('inverted',!!c&&isInverted(c.id));$('card').querySelector('.card-back').hidden=!!c;if(c){$('card-image').src=c.image;$('card-image').alt=cardName(c);$('card').setAttribute('aria-label',`Open information for ${cardName(c)}`);}info($('info'));renderDiscards();updateCardAction();$('status').textContent=`${state.remaining.length} remaining · ${state.discards.length} discarded${c?' · 1 on the table':''}${storageAvailable?'':' · Storage unavailable: this session only'}`;}
 function open(label){$('modal-label').textContent=label;$('modal-body').replaceChildren();if(!$('modal').open)$('modal').showModal();return $('modal-body');}
-function inventory(){const body=open('YOUR DECK');body.append(el('h2','A place for every card'));const counts=el('div','','counts');counts.append(el('span',`${state.remaining.length} remaining`),el('span',`${state.discards.length} discarded`),el('span',`${state.current?1:0} on the table`));body.append(counts);if(current())body.append(el('p',`On the table: ${cardName(current())}`));body.append(el('h3','Discard pile · newest first'));if(!state.discards.length)body.append(el('p','No discarded cards yet. Your current card moves here on the next draw.'));const list=el('ol','','pile-list');[...state.discards].reverse().forEach(id=>list.append(el('li',cardName(cards.find(c=>c.id===id)))));body.append(list,el('p','The order of the remaining deck stays hidden until you draw.'));}
+function inventory(){const body=open('YOUR DECK');body.append(el('h2','A place for every card'));const counts=el('div','','counts');counts.append(el('span',`${state.remaining.length} remaining`),el('span',`${state.discards.length} discarded`),el('span',`${state.current?1:0} on the table`));body.append(counts);if(current())body.append(el('p',`On the table: ${cardName(current())}`));body.append(el('h3','Discard pile · newest first'));if(!state.discards.length)body.append(el('p','No discarded cards yet. Your current card moves here on the next draw.'));const list=el('ol','','pile-list');[...state.discards].reverse().forEach(id=>{const c=cards.find(c=>c.id===id),item=el('li'),button=el('button',cardName(c),'pile-card-button');button.type='button';button.dataset.cardId=id;button.setAttribute('aria-label',`Open notes for ${cardName(c)}`);button.onclick=()=>showDiscardNotes(id);item.append(button);list.append(item);});body.append(list,el('p','The order of the remaining deck stays hidden until you draw.'));}
 $('close').onclick=()=>$('modal').close();$('modal').addEventListener('click',e=>{if(e.target===$('modal')){const r=$('modal').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('modal').close();}});
 function drawCard(){if(!state||!state.remaining.length)return;state=TarotDeck.draw(state,allowInverted);save();render();}
+function showDiscardNotes(id){
+ if(!state||!state.discards.includes(id))return;
+ const c=cards.find(card=>card.id===id),body=open('DISCARDED CARD');info(body,c);
+ const button=el('button','Back to discard pile','primary');
+ button.onclick=()=>{inventory();const selected=[...$('modal-body').querySelectorAll('.pile-card-button')].find(button=>button.dataset.cardId===id);selected?.focus();};
+ body.append(button);$('modal').scrollTop=0;button.focus({preventScroll:true});
+}
 function showCardNotes(){if(!state)return;const body=open('CARD INFORMATION');info(body);const button=el('button','View discard pile & counts','primary');button.onclick=inventory;body.append(button);}
 $('draw').onclick=()=>{if(!desktop.matches&&swapMobile)showCardNotes();else drawCard();};
 $('card').onclick=()=>{if(!state)return;if(desktop.matches){if(clickToDraw)drawCard();return;}if(swapMobile||state.current===null){drawCard();return;}showCardNotes();};

@@ -143,3 +143,7 @@ footer b,.desk-credit b{color:var(--accent);padding:0 10px}
 /* Rotate artwork inside its frame so the discard fan keeps its position. */
 .discard-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;border-radius:8px}
 .card img.inverted,.discard-card img.inverted{transform:rotate(180deg)}
+
+.pile-list li{padding:0}
+.pile-card-button{display:block;width:100%;min-height:44px;padding:12px 10px;text-align:left;border:0;background:transparent;color:var(--ink);border-radius:6px}
+.pile-card-button:hover{background:var(--surface-2);color:var(--accent)}
