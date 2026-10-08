@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1c1824"><title>Stars, Stones &amp; Salt</title>
+  <link rel="stylesheet" id="theme-stylesheet" href="assets/themes/dusk.css"><link rel="stylesheet" href="assets/style.css">
+  <script src="assets/deck.js" defer></script><script src="assets/app.js" defer></script>
+</head>
+<body>
+  <header><a class="brand" href="./"><span id="header-icon" aria-hidden="true">✦</span> <span id="site-title">Stars, Stones &amp; Salt</span></a><button id="theme" class="quiet" aria-label="Switch color theme">◐</button></header>
+  <main>
+    <div class="intro"><p class="eyebrow">A MOMENT AT THE TABLE</p><h1 id="site-subtitle">Find yourself in the cards.</h1></div>
+    <section class="desk" aria-label="Tarot desk">
+      <div class="card-area">
+        <div class="card-hand"><button id="discards" class="discard-stack" aria-label="Open discard pile" hidden></button>
+        <button id="card" class="card" aria-label="Open card information"><span class="card-back"><span>✦</span><strong id="card-brand">Stars,<br>Stones<br>&amp; Salt</strong><small>78 possibilities</small></span><img id="card-image" hidden alt=""></button>
+        </div>
+      </div>
+      <div class="reading-column"><article id="info" class="info"></article><div class="controls"><button id="draw" class="primary" disabled>Opening deck…</button><button id="settings" class="settings" aria-label="Open deck settings">⚙</button></div><p id="status" role="status" aria-live="polite">Preparing your deck…</p><div class="desk-credit"><span><a class="credit-link" href="https://the-kitchen.dev/">TechInTheKitchen</a> <b> / </b> Stars, Stones &amp; Salt Tarot</span></div></div>
+    </section>
+    <footer><span><a class="credit-link" href="https://the-kitchen.dev/">TechInTheKitchen</a> <b> / </b> Stars, Stones &amp; Salt Tarot</span></footer>
+  </main>
+  <dialog id="modal" aria-labelledby="modal-label"><div class="dialog-head"><p class="eyebrow" id="modal-label">Stars, Stones &amp; Salt</p><button id="close" class="quiet" aria-label="Close dialog">×</button></div><div id="modal-body"></div></dialog>
+</body>
+</html>
+

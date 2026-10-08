@@ -1,0 +1,141 @@
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,sans-serif}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer}button:disabled{cursor:default;opacity:.5}button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}header{max-width:1200px;margin:auto;padding:24px 40px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{color:var(--ink);text-decoration:none;font:24px Georgia,serif}.brand span{color:var(--accent);margin-right:12px}.quiet{border:0;background:transparent;color:var(--ink);font-size:28px;width:44px;height:44px}main{max-width:1120px;margin:auto;padding:35px 40px}.intro{text-align:center;margin-bottom:34px}.eyebrow{letter-spacing:.18em;font-size:11px;font-weight:700;color:var(--accent)}h1{font:clamp(28px,4vw,42px) Georgia,serif;margin:12px 0}p{line-height:1.6}.intro>p:last-child{color:var(--muted);font-size:14px}.desk{display:grid;grid-template-columns:1fr 1fr;gap:48px;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:38px;box-shadow:0 20px 70px var(--shadow-color)}.card-area{position:relative;display:flex;justify-content:flex-end;align-items:center;padding-left:65px}.card{display:block;position:relative;width:100%;max-width:270px;aspect-ratio:0.575;padding:0;border:0;border-radius:8px;background:var(--surface-2);box-shadow:0 14px 28px var(--shadow-color);z-index:2;overflow:hidden}.card img{width:100%;height:100%;object-fit:contain;display:block}.card img[hidden]{display:none}.card-back{position:absolute;inset:10px;border:1px solid var(--accent);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:35px;background:repeating-linear-gradient(45deg,transparent,transparent 12px,var(--accent-soft) 12px,var(--accent-soft) 13px);color:var(--accent)}.card-back>span{font-size:70px}.card-back strong{font:28px Georgia,serif;letter-spacing:.15em;line-height:1.6}.card-back small{font-size:11px;letter-spacing:.15em}.discard-stack{position:absolute;left:0;top:23%;width:110px;height:210px;border:1px solid var(--line);background:var(--surface-2);border-radius:6px;transform:rotate(-10deg);color:var(--accent);box-shadow:-6px 5px 0 var(--bg),-7px 6px 0 var(--line)}.discard-stack span{display:block;font-size:35px}.discard-stack small{display:block;font-size:11px;margin-top:25px}.reading-column{display:flex;flex-direction:column;justify-content:center;min-width:0}.info{flex:1;padding:12px 0}.info h2,dialog h2{font:32px Georgia,serif;margin:14px 0 20px}.info p{color:var(--muted);font-size:15px}.info h3,dialog h3{font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-top:24px}.tags{display:flex;gap:8px;flex-wrap:wrap}.tag{font-size:12px;border:1px solid var(--line);padding:6px 10px;border-radius:20px;color:var(--accent)}.controls{display:flex;gap:12px;margin-top:20px}.primary{background:var(--accent);color:var(--bg);border:0;border-radius:8px;padding:16px 24px;font-weight:700;flex:1}.settings{border:1px solid var(--line);border-radius:8px;background:var(--surface-2);color:var(--ink);width:54px;font-size:24px}#status{color:var(--muted);font-size:12px;margin-bottom:0}footer{text-align:center;font-size:12px;color:var(--faint);padding:24px}.text-button{background:none;border:0;color:var(--accent);text-decoration:underline;padding:5px}dialog{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:16px;width:min(560px,calc(100% - 28px));max-height:85dvh;padding:24px}dialog::backdrop{background:var(--scrim-color);backdrop-filter:blur(5px)}.dialog-head{display:flex;justify-content:space-between;align-items:center}.dialog-head p{margin:0}dialog p{color:var(--muted)}.counts{display:flex;gap:12px;flex-wrap:wrap;padding:14px;background:var(--surface-2);border-radius:8px}.pile-list{list-style:none;padding:0}.pile-list li{padding:10px 0;border-bottom:1px solid var(--line)}.pile-list small{color:var(--muted)}.error{color:var(--danger)!important}
+@media(max-width:680px){header{padding:14px 20px}main{padding:22px 16px}.intro{margin-bottom:22px}.intro h1{font-size:27px}.intro>p:last-child{display:none}.desk{display:block;padding:22px 24px}.card-area{padding:0;justify-content:center}.card{max-width:260px}.discard-stack{display:none}.reading-column>.info{display:none}.controls{margin-top:40px}.reading-column #status{text-align:center}footer{padding:18px 0;font-size:11px}}
+@media(prefers-reduced-motion:no-preference){button{transition:filter .15s,transform .15s}.primary:hover{filter:brightness(1.08)}.card:hover{transform:translateY(-3px)}}
+
+[hidden]{display:none!important}
+.card:disabled{opacity:1;cursor:default}
+.card:disabled:hover{transform:none}
+.setting-toggle{display:flex;align-items:center;gap:12px;padding:16px 0;cursor:pointer}
+.setting-toggle input{width:20px;height:20px;accent-color:var(--accent);flex:none}
+.theme-label{display:block;margin:20px 0 8px;font-weight:600}
+#theme-select{width:100%;padding:12px;border:1px solid var(--line);border-radius:8px;background:var(--surface-2);color:var(--ink);font:inherit}
+#theme-select:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+/* Artwork never participates in sizing the card or the surrounding desk. */
+html{scrollbar-gutter:stable}
+.desk{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.card{flex:none;min-height:0}
+.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.card-area{align-self:start;min-width:0}
+.reading-column{height:560px}
+.reading-column>.info{min-height:0;overflow-y:auto;scrollbar-gutter:stable;padding-right:12px}
+.controls{flex-shrink:0}
+#status{min-height:3.2em;flex-shrink:0}
+@media(max-width:680px){.reading-column{height:auto}.reading-column>.info{padding:0}#status{min-height:3.2em}}
+
+/* Use the available desktop canvas while keeping a steady frame between draws. */
+@media(min-width:681px){
+  header{max-width:none;padding-inline:clamp(24px,3vw,64px)}
+  main{width:80%;max-width:none;padding:24px 0 0}
+  .intro{margin-bottom:24px}
+  .desk{gap:clamp(28px,4vw,80px);padding:clamp(24px,3vw,48px);min-height:calc(100dvh - 300px)}
+  .card-area{height:100%;align-self:stretch;justify-content:center;padding-left:70px}
+  .card{width:min(100%,calc(clamp(460px,calc(100dvh - 380px),900px) * .575));max-width:none}
+  .reading-column{height:clamp(460px,calc(100dvh - 380px),900px)}
+  .discard-stack{left:4%;top:27%}
+  footer{padding:18px}
+}
+
+/* One shared frame makes the visible hand and every discarded card identical in size. */
+.card-hand{position:relative;width:100%;max-width:260px;aspect-ratio:.575;isolation:isolate}
+.card-hand>.card{width:100%;max-width:none;height:100%;z-index:2}
+.card-hand>.discard-stack{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;background:none;box-shadow:none;transform:none;z-index:1}
+@media(max-width:680px){
+ .card-hand>.discard-stack{display:block}
+ .card-area,.card-hand{overflow:visible}
+ html{scrollbar-gutter:auto;overflow-x:clip}
+ body{overflow-x:clip}
+}
+.discard-stack img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;border-radius:8px;background:var(--surface-2);box-shadow:0 8px 18px var(--shadow-color);transform-origin:50% 90%;transform:translateX(calc(var(--fan-step) * -7%)) rotate(calc(var(--fan-step) * -9deg))}
+@media(min-width:681px){
+ .card-area{padding-left:20%;padding-block:24px}
+ .card-hand{width:min(100%,calc(clamp(460px,calc(100dvh - 380px),900px) * .575));max-width:none}
+}
+
+/* Let the desk use the space left after the header, intro, and footer. */
+@media(min-width:681px){
+ body{height:100dvh;display:flex;flex-direction:column}
+ header{width:100%;flex:none;padding-block:12px}
+ main{flex:1;min-height:0;margin:0 auto;display:grid;grid-template-rows:auto minmax(0,1fr) auto;padding-top:12px}
+ .intro{margin-bottom:16px}
+ .intro h1{margin:8px 0}
+ .intro p{margin:8px 0}
+ .desk{min-height:0;padding:clamp(12px,2vh,28px) clamp(20px,3vw,48px)}
+ .card-area{min-height:0;height:100%;padding-block:0;container-type:size}
+ .card-hand{width:min(100cqw,51cqh);max-width:none;flex:none}
+ .reading-column{height:100%;min-height:0}
+ .controls{margin-top:12px}
+ #status{min-height:0;margin-top:8px}
+ footer{padding:10px}
+ .card-back{gap:clamp(4px,4cqh,35px)}
+ .card-back>span{font-size:clamp(20px,10cqh,70px)}
+ .card-back strong{font-size:clamp(12px,5cqh,28px)}
+ .card-back small{font-size:clamp(8px,2cqh,11px)}
+}
+@media(min-width:681px) and (max-height:650px){
+ .intro>.eyebrow,.intro>p:last-child{display:none}
+ .intro h1{font-size:28px}
+ .primary{padding-block:12px}
+}
+
+@media(max-width:680px){
+ body{height:100dvh;display:flex;flex-direction:column}
+ header{width:100%;flex:none;padding-block:8px}
+ main{width:100%;flex:1;min-height:0;margin:0;display:grid;grid-template-rows:auto minmax(0,1fr) auto;padding:10px 16px 0}
+ .intro{margin-bottom:10px}
+ .intro .eyebrow{margin:4px 0}
+ .intro h1{margin:6px 0;font-size:clamp(21px,5vw,27px)}
+ .desk{min-height:0;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto;gap:28px;padding:14px 20px}
+ .card-area{height:100%;min-height:0;align-self:stretch;container-type:size}
+ .card-hand{width:min(100cqw,57.5cqh,312px);max-width:312px;flex:none}
+
+ .reading-column{min-height:0;height:auto}
+ .controls{margin-top:0}
+ #status{min-height:0;margin-top:8px;font-size:11px}
+ footer{padding:8px 0}
+ .card-back{gap:clamp(4px,5cqh,35px)}
+ .card-back>span{font-size:clamp(20px,12cqh,70px)}
+ .card-back strong{font-size:clamp(12px,6cqh,28px)}
+ .card-back small{font-size:clamp(8px,2.5cqh,11px)}
+}
+@media(max-width:680px) and (max-height:550px){
+ .intro{display:none}
+ main{grid-template-rows:minmax(0,1fr) auto}
+ .primary{padding-block:10px}
+ .desk{padding-block:10px}
+}
+
+
+#site-title{color:var(--ink);margin:0}
+.brand{min-width:0}
+#card-brand{white-space:pre-line;padding:0 8px;font-size:clamp(12px,4cqh,24px);line-height:1.45;letter-spacing:.06em;text-align:center}
+@media(max-width:680px){.brand{font-size:clamp(16px,4.5vw,24px)}header .quiet{flex:none}}
+
+
+/* Keep full-size mobile cards and layer the bottom controls over the discard edges. */
+@media(max-width:680px){
+ .reading-column{position:relative;z-index:1}
+}
+
+.card-back strong{white-space:pre-line}
+.card-back.has-image{inset:0;border:0;background:none}
+.card-back.has-image>span,.card-back.has-image>strong,.card-back.has-image>small{display:none}
+#header-icon{display:inline-block;vertical-align:middle;line-height:1}
+#header-icon:empty{display:none}
+#header-icon img{display:block;width:1.25em;height:1.25em;object-fit:contain}
+#header-icon img[hidden]{display:none}
+/* Credit styling follows The Kitchen, using the active tarot theme palette. */
+footer,.desk-credit{text-align:left;padding:24px 0;color:var(--muted);font:10px Arial,sans-serif;letter-spacing:.06em;line-height:1.6}
+footer b,.desk-credit b{color:var(--accent);padding:0 10px}
+.desk-credit{display:none;margin-top:6px;padding:0;flex-shrink:0}
+@media(max-width:680px){
+ footer{display:none}
+ .desk-credit{display:block;text-align:center;font-size:10px;letter-spacing:.03em}
+ .desk-credit b{padding:0 5px}
+ .desk{padding:20px}
+ main{padding-bottom:16px}
+ main{grid-template-rows:auto minmax(0,1fr)}
+}
+@media(max-width:680px) and (max-height:550px){main{grid-template-rows:minmax(0,1fr)}}
+.credit-link{color:inherit;text-decoration:none}
+.credit-link:hover{color:var(--accent);text-decoration:underline}

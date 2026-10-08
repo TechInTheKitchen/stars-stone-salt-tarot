@@ -1,0 +1,1095 @@
+[
+  {
+    "id": "major-0",
+    "name": "The Fool",
+    "group": "Major Arcana",
+    "image": "assets/cards/00-TheFool.webp",
+    "keywords": [
+      "Beginnings",
+      "Trust",
+      "Freedom"
+    ],
+    "meaning": "A new path asks for curiosity and a willingness to begin before every detail is known.",
+    "reflection": "Where could you take a small, brave first step?",
+    "rules": ""
+  },
+  {
+    "id": "major-1",
+    "name": "The Magician",
+    "group": "Major Arcana",
+    "image": "assets/cards/01-TheMagician.webp",
+    "keywords": [
+      "Action",
+      "Skill",
+      "Resourcefulness"
+    ],
+    "meaning": "Bring your tools, attention, and intention together. You have resources that can turn an idea into action.",
+    "reflection": "What can you make with what you already have?",
+    "rules": ""
+  },
+  {
+    "id": "major-2",
+    "name": "The High Priestess",
+    "group": "Major Arcana",
+    "image": "assets/cards/02-TheHighPriestess.webp",
+    "keywords": [
+      "Intuition",
+      "Mystery",
+      "Stillness"
+    ],
+    "meaning": "Pause and listen beneath the obvious. Some understanding arrives through observation rather than immediate action.",
+    "reflection": "What have you sensed but not yet acknowledged?",
+    "rules": ""
+  },
+  {
+    "id": "major-3",
+    "name": "The Empress",
+    "group": "Major Arcana",
+    "image": "assets/cards/03-TheEmpress.webp",
+    "keywords": [
+      "Nurture",
+      "Abundance",
+      "Creativity"
+    ],
+    "meaning": "Care and patient cultivation help something grow. Make room for comfort, creativity, and the natural rhythm of development.",
+    "reflection": "What in your life needs tending?",
+    "rules": ""
+  },
+  {
+    "id": "major-4",
+    "name": "The Emperor",
+    "group": "Major Arcana",
+    "image": "assets/cards/04-TheEmperor.webp",
+    "keywords": [
+      "Structure",
+      "Authority",
+      "Stability"
+    ],
+    "meaning": "Clear boundaries and steady leadership create a reliable foundation. Consider how structure can support your goals.",
+    "reflection": "Which boundary would bring greater stability?",
+    "rules": ""
+  },
+  {
+    "id": "major-5",
+    "name": "The Hierophant",
+    "group": "Major Arcana",
+    "image": "assets/cards/05-TheHierophant.webp",
+    "keywords": [
+      "Tradition",
+      "Learning",
+      "Guidance"
+    ],
+    "meaning": "Established practices and shared knowledge offer a starting point. Examine the teachings you follow and why they matter.",
+    "reflection": "Which tradition supports you, and which needs questioning?",
+    "rules": ""
+  },
+  {
+    "id": "major-6",
+    "name": "The Lovers",
+    "group": "Major Arcana",
+    "image": "assets/cards/06-TheLovers.webp",
+    "keywords": [
+      "Alignment",
+      "Choice",
+      "Connection"
+    ],
+    "meaning": "A meaningful choice asks you to bring actions into alignment with your values. Honest connection begins with clarity.",
+    "reflection": "What choice best reflects your values?",
+    "rules": ""
+  },
+  {
+    "id": "major-7",
+    "name": "The Chariot",
+    "group": "Major Arcana",
+    "image": "assets/cards/07-TheChariot.webp",
+    "keywords": [
+      "Direction",
+      "Resolve",
+      "Movement"
+    ],
+    "meaning": "Gather competing impulses into a clear direction. Progress comes through focus, discipline, and deliberate effort.",
+    "reflection": "Where do you want to direct your energy?",
+    "rules": ""
+  },
+  {
+    "id": "major-8",
+    "name": "Strength",
+    "group": "Major Arcana",
+    "image": "assets/cards/08-Strength.webp",
+    "keywords": [
+      "Courage",
+      "Patience",
+      "Compassion"
+    ],
+    "meaning": "Quiet courage can be more effective than force. Meet difficulty with patience and care for yourself and others.",
+    "reflection": "How could you respond with steady kindness?",
+    "rules": ""
+  },
+  {
+    "id": "major-9",
+    "name": "The Hermit",
+    "group": "Major Arcana",
+    "image": "assets/cards/09-TheHermit.webp",
+    "keywords": [
+      "Solitude",
+      "Insight",
+      "Reflection"
+    ],
+    "meaning": "Step back from the noise to find your own understanding. A period of reflection can illuminate the next step.",
+    "reflection": "What becomes clearer when you slow down?",
+    "rules": ""
+  },
+  {
+    "id": "major-10",
+    "name": "Wheel of Fortune",
+    "group": "Major Arcana",
+    "image": "assets/cards/10-WheelOfFortune.webp",
+    "keywords": [
+      "Cycles",
+      "Change",
+      "Opportunity"
+    ],
+    "meaning": "Circumstances shift and cycles turn. Notice what you can influence and where adaptability may serve you.",
+    "reflection": "How can you meet change with flexibility?",
+    "rules": ""
+  },
+  {
+    "id": "major-11",
+    "name": "Justice",
+    "group": "Major Arcana",
+    "image": "assets/cards/11-Justice.webp",
+    "keywords": [
+      "Fairness",
+      "Truth",
+      "Accountability"
+    ],
+    "meaning": "Look honestly at choices and consequences. A balanced assessment asks for evidence, responsibility, and fairness.",
+    "reflection": "What would a fair response look like?",
+    "rules": ""
+  },
+  {
+    "id": "major-12",
+    "name": "The Hanged Man",
+    "group": "Major Arcana",
+    "image": "assets/cards/12-TheHangedMan.webp",
+    "keywords": [
+      "Pause",
+      "Perspective",
+      "Surrender"
+    ],
+    "meaning": "A pause may reveal a different angle. Release the urge to force progress and consider another way of seeing.",
+    "reflection": "What changes when you look from another perspective?",
+    "rules": ""
+  },
+  {
+    "id": "major-13",
+    "name": "Death",
+    "group": "Major Arcana",
+    "image": "assets/cards/13-Death.webp",
+    "keywords": [
+      "Endings",
+      "Transition",
+      "Renewal"
+    ],
+    "meaning": "An ending makes room for change. Let an outgrown pattern close so a new phase can develop.",
+    "reflection": "What are you ready to release?",
+    "rules": ""
+  },
+  {
+    "id": "major-14",
+    "name": "Temperance",
+    "group": "Major Arcana",
+    "image": "assets/cards/14-Temperance.webp",
+    "keywords": [
+      "Balance",
+      "Integration",
+      "Moderation"
+    ],
+    "meaning": "Combine different needs with patience. A sustainable rhythm often emerges through small adjustments.",
+    "reflection": "What needs a gentler balance?",
+    "rules": ""
+  },
+  {
+    "id": "major-15",
+    "name": "The Devil",
+    "group": "Major Arcana",
+    "image": "assets/cards/15-TheDevil.webp",
+    "keywords": [
+      "Attachment",
+      "Patterns",
+      "Awareness"
+    ],
+    "meaning": "Notice habits or attachments that limit your freedom. Naming a pattern can be the first step toward choosing differently.",
+    "reflection": "What feels compulsory, and what choice remains yours?",
+    "rules": ""
+  },
+  {
+    "id": "major-16",
+    "name": "The Tower",
+    "group": "Major Arcana",
+    "image": "assets/cards/16-TheTower.webp",
+    "keywords": [
+      "Disruption",
+      "Revelation",
+      "Rebuilding"
+    ],
+    "meaning": "A shaken assumption can expose what needs rebuilding. Seek a more honest foundation after an unexpected change.",
+    "reflection": "Which assumption deserves a second look?",
+    "rules": ""
+  },
+  {
+    "id": "major-17",
+    "name": "The Star",
+    "group": "Major Arcana",
+    "image": "assets/cards/17-TheStar.webp",
+    "keywords": [
+      "Hope",
+      "Renewal",
+      "Openness"
+    ],
+    "meaning": "Let yourself reconnect with hope and possibility. Small acts of renewal can restore a sense of direction.",
+    "reflection": "What helps you feel renewed?",
+    "rules": ""
+  },
+  {
+    "id": "major-18",
+    "name": "The Moon",
+    "group": "Major Arcana",
+    "image": "assets/cards/18-TheMoon.webp",
+    "keywords": [
+      "Uncertainty",
+      "Imagination",
+      "Instinct"
+    ],
+    "meaning": "Not everything is clear yet. Distinguish feelings and assumptions from what you know, and move thoughtfully.",
+    "reflection": "What needs clarification before you act?",
+    "rules": ""
+  },
+  {
+    "id": "major-19",
+    "name": "The Sun",
+    "group": "Major Arcana",
+    "image": "assets/cards/19-TheSun.webp",
+    "keywords": [
+      "Joy",
+      "Clarity",
+      "Vitality"
+    ],
+    "meaning": "Clarity and warmth invite you to enjoy what is working. Give yourself permission to celebrate simple successes.",
+    "reflection": "What deserves celebration today?",
+    "rules": ""
+  },
+  {
+    "id": "major-20",
+    "name": "Judgement",
+    "group": "Major Arcana",
+    "image": "assets/cards/20-Judgement.webp",
+    "keywords": [
+      "Awakening",
+      "Review",
+      "Calling"
+    ],
+    "meaning": "Reflect on what experience has taught you. An honest review can help you answer a renewed sense of purpose.",
+    "reflection": "What lesson are you ready to put into practice?",
+    "rules": ""
+  },
+  {
+    "id": "major-21",
+    "name": "The World",
+    "group": "Major Arcana",
+    "image": "assets/cards/21-TheWorld.webp",
+    "keywords": [
+      "Completion",
+      "Integration",
+      "Wholeness"
+    ],
+    "meaning": "A cycle reaches completion. Recognize the work behind it and carry its lessons into what comes next.",
+    "reflection": "What have you completed, and what have you learned?",
+    "rules": ""
+  },
+  {
+    "id": "wands-1",
+    "name": "Ace of Wands",
+    "group": "Minor Arcana · Wands · Fire",
+    "image": "assets/cards/Wands01.webp",
+    "keywords": [
+      "Beginnings",
+      "Wands",
+      "Fire"
+    ],
+    "meaning": "A fresh possibility is emerging. The suit of Wands brings this theme to creativity, motivation, and action.",
+    "reflection": "How does beginnings show up in your creativity, motivation, and action?",
+    "rules": ""
+  },
+  {
+    "id": "wands-2",
+    "name": "Two of Wands",
+    "group": "Minor Arcana · Wands · Fire",
+    "image": "assets/cards/Wands02.webp",
+    "keywords": [
+      "Balance",
+      "Wands",
+      "Fire"
+    ],
+    "meaning": "Balance competing needs and choose a workable rhythm. The suit of Wands brings this theme to creativity, motivation, and action.",
+    "reflection": "How does balance show up in your creativity, motivation, and action?",
+    "rules": ""
+  },
+  {
+    "id": "wands-3",
+    "name": "Three of Wands",
+    "group": "Minor Arcana · Wands · Fire",
+    "image": "assets/cards/Wands03.webp",
+    "keywords": [
+      "Growth",
+      "Wands",
+      "Fire"
+    ],
+    "meaning": "Shared effort and early growth are coming into focus. The suit of Wands brings this theme to creativity, motivation, and action.",
+    "reflection": "How does growth show up in your creativity, motivation, and action?",
+    "rules": ""
+  },
+  {
+    "id": "wands-4",
+    "name": "Four of Wands",
+    "group": "Minor Arcana · Wands · Fire",
+    "image": "assets/cards/Wands04.webp",
+    "keywords": [
+      "Stability",
+      "Wands",
+      "Fire"
+    ],
+    "meaning": "Consider the support and limitations of your current structure. The suit of Wands brings this theme to creativity, motivation, and action.",
+    "reflection": "How does stability show up in your creativity, motivation, and action?",
+    "rules": ""
+  },
+  {
+    "id": "wands-5",
+    "name": "Five of Wands",
+    "group": "Minor Arcana · Wands · Fire",
+    "image": "assets/cards/Wands05.webp",
+    "keywords": [
+      "Challenge",
+      "Wands",
+      "Fire"
+    ],
+    "meaning": "A challenge invites you to reconsider your response. The suit of Wands brings this theme to creativity, motivation, and action.",
+    "reflection": "How does challenge show up in your creativity, motivation, and action?",
+    "rules": ""
+  },
+  {
+    "id": "wands-6",
+    "name": "Six of Wands",
+    "group": "Minor Arcana · Wands · Fire",
+    "image": "assets/cards/Wands06.webp",
+    "keywords": [
+      "Exchange",
+      "Wands",
+      "Fire"
+    ],
+    "meaning": "Notice how giving, receiving, and past experience shape the present. The suit of Wands brings this theme to creativity, motivation, and action.",
+    "reflection": "How does exchange show up in your creativity, motivation, and action?",
+    "rules": ""
+  },
+  {
+    "id": "wands-7",
+    "name": "Seven of Wands",
+    "group": "Minor Arcana · Wands · Fire",
+    "image": "assets/cards/Wands07.webp",
+    "keywords": [
+      "Assessment",
+      "Wands",
+      "Fire"
+    ],
+    "meaning": "Step back and assess your options before committing. The suit of Wands brings this theme to creativity, motivation, and action.",
+    "reflection": "How does assessment show up in your creativity, motivation, and action?",
+    "rules": ""
+  },
+  {
+    "id": "wands-8",
+    "name": "Eight of Wands",
+    "group": "Minor Arcana · Wands · Fire",
+    "image": "assets/cards/Wands08.webp",
+    "keywords": [
+      "Movement",
+      "Wands",
+      "Fire"
+    ],
+    "meaning": "Focused movement or practice can carry you forward. The suit of Wands brings this theme to creativity, motivation, and action.",
+    "reflection": "How does movement show up in your creativity, motivation, and action?",
+    "rules": ""
+  },
+  {
+    "id": "wands-9",
+    "name": "Nine of Wands",
+    "group": "Minor Arcana · Wands · Fire",
+    "image": "assets/cards/Wands09.webp",
+    "keywords": [
+      "Fulfillment",
+      "Wands",
+      "Fire"
+    ],
+    "meaning": "Recognize what you have cultivated and what still needs attention. The suit of Wands brings this theme to creativity, motivation, and action.",
+    "reflection": "How does fulfillment show up in your creativity, motivation, and action?",
+    "rules": ""
+  },
+  {
+    "id": "wands-10",
+    "name": "Ten of Wands",
+    "group": "Minor Arcana · Wands · Fire",
+    "image": "assets/cards/Wands10.webp",
+    "keywords": [
+      "Completion",
+      "Wands",
+      "Fire"
+    ],
+    "meaning": "A cycle is reaching its full expression; consider what comes next. The suit of Wands brings this theme to creativity, motivation, and action.",
+    "reflection": "How does completion show up in your creativity, motivation, and action?",
+    "rules": ""
+  },
+  {
+    "id": "wands-11",
+    "name": "Page of Wands",
+    "group": "Minor Arcana · Wands · Fire",
+    "image": "assets/cards/Wands11.webp",
+    "keywords": [
+      "Curiosity",
+      "Wands",
+      "Fire"
+    ],
+    "meaning": "Approach this area with curiosity and a willingness to learn. The suit of Wands brings this theme to creativity, motivation, and action.",
+    "reflection": "How does curiosity show up in your creativity, motivation, and action?",
+    "rules": ""
+  },
+  {
+    "id": "wands-12",
+    "name": "Knight of Wands",
+    "group": "Minor Arcana · Wands · Fire",
+    "image": "assets/cards/Wands12.webp",
+    "keywords": [
+      "Pursuit",
+      "Wands",
+      "Fire"
+    ],
+    "meaning": "Pursue your intention while checking your pace and direction. The suit of Wands brings this theme to creativity, motivation, and action.",
+    "reflection": "How does pursuit show up in your creativity, motivation, and action?",
+    "rules": ""
+  },
+  {
+    "id": "wands-13",
+    "name": "Queen of Wands",
+    "group": "Minor Arcana · Wands · Fire",
+    "image": "assets/cards/Wands13.webp",
+    "keywords": [
+      "Care",
+      "Wands",
+      "Fire"
+    ],
+    "meaning": "Bring thoughtful care and mature understanding to this area. The suit of Wands brings this theme to creativity, motivation, and action.",
+    "reflection": "How does care show up in your creativity, motivation, and action?",
+    "rules": ""
+  },
+  {
+    "id": "wands-14",
+    "name": "King of Wands",
+    "group": "Minor Arcana · Wands · Fire",
+    "image": "assets/cards/Wands14.webp",
+    "keywords": [
+      "Leadership",
+      "Wands",
+      "Fire"
+    ],
+    "meaning": "Lead with responsibility, experience, and a clear sense of purpose. The suit of Wands brings this theme to creativity, motivation, and action.",
+    "reflection": "How does leadership show up in your creativity, motivation, and action?",
+    "rules": ""
+  },
+  {
+    "id": "cups-1",
+    "name": "Ace of Cups",
+    "group": "Minor Arcana · Cups · Water",
+    "image": "assets/cards/Cups01.webp",
+    "keywords": [
+      "Beginnings",
+      "Cups",
+      "Water"
+    ],
+    "meaning": "A fresh possibility is emerging. The suit of Cups brings this theme to feelings, relationships, and imagination.",
+    "reflection": "How does beginnings show up in your feelings, relationships, and imagination?",
+    "rules": ""
+  },
+  {
+    "id": "cups-2",
+    "name": "Two of Cups",
+    "group": "Minor Arcana · Cups · Water",
+    "image": "assets/cards/Cups02.webp",
+    "keywords": [
+      "Balance",
+      "Cups",
+      "Water"
+    ],
+    "meaning": "Balance competing needs and choose a workable rhythm. The suit of Cups brings this theme to feelings, relationships, and imagination.",
+    "reflection": "How does balance show up in your feelings, relationships, and imagination?",
+    "rules": ""
+  },
+  {
+    "id": "cups-3",
+    "name": "Three of Cups",
+    "group": "Minor Arcana · Cups · Water",
+    "image": "assets/cards/Cups03.webp",
+    "keywords": [
+      "Growth",
+      "Cups",
+      "Water"
+    ],
+    "meaning": "Shared effort and early growth are coming into focus. The suit of Cups brings this theme to feelings, relationships, and imagination.",
+    "reflection": "How does growth show up in your feelings, relationships, and imagination?",
+    "rules": ""
+  },
+  {
+    "id": "cups-4",
+    "name": "Four of Cups",
+    "group": "Minor Arcana · Cups · Water",
+    "image": "assets/cards/Cups04.webp",
+    "keywords": [
+      "Stability",
+      "Cups",
+      "Water"
+    ],
+    "meaning": "Consider the support and limitations of your current structure. The suit of Cups brings this theme to feelings, relationships, and imagination.",
+    "reflection": "How does stability show up in your feelings, relationships, and imagination?",
+    "rules": ""
+  },
+  {
+    "id": "cups-5",
+    "name": "Five of Cups",
+    "group": "Minor Arcana · Cups · Water",
+    "image": "assets/cards/Cups05.webp",
+    "keywords": [
+      "Challenge",
+      "Cups",
+      "Water"
+    ],
+    "meaning": "A challenge invites you to reconsider your response. The suit of Cups brings this theme to feelings, relationships, and imagination.",
+    "reflection": "How does challenge show up in your feelings, relationships, and imagination?",
+    "rules": ""
+  },
+  {
+    "id": "cups-6",
+    "name": "Six of Cups",
+    "group": "Minor Arcana · Cups · Water",
+    "image": "assets/cards/Cups06.webp",
+    "keywords": [
+      "Exchange",
+      "Cups",
+      "Water"
+    ],
+    "meaning": "Notice how giving, receiving, and past experience shape the present. The suit of Cups brings this theme to feelings, relationships, and imagination.",
+    "reflection": "How does exchange show up in your feelings, relationships, and imagination?",
+    "rules": ""
+  },
+  {
+    "id": "cups-7",
+    "name": "Seven of Cups",
+    "group": "Minor Arcana · Cups · Water",
+    "image": "assets/cards/Cups07.webp",
+    "keywords": [
+      "Assessment",
+      "Cups",
+      "Water"
+    ],
+    "meaning": "Step back and assess your options before committing. The suit of Cups brings this theme to feelings, relationships, and imagination.",
+    "reflection": "How does assessment show up in your feelings, relationships, and imagination?",
+    "rules": ""
+  },
+  {
+    "id": "cups-8",
+    "name": "Eight of Cups",
+    "group": "Minor Arcana · Cups · Water",
+    "image": "assets/cards/Cups08.webp",
+    "keywords": [
+      "Movement",
+      "Cups",
+      "Water"
+    ],
+    "meaning": "Focused movement or practice can carry you forward. The suit of Cups brings this theme to feelings, relationships, and imagination.",
+    "reflection": "How does movement show up in your feelings, relationships, and imagination?",
+    "rules": ""
+  },
+  {
+    "id": "cups-9",
+    "name": "Nine of Cups",
+    "group": "Minor Arcana · Cups · Water",
+    "image": "assets/cards/Cups09.webp",
+    "keywords": [
+      "Fulfillment",
+      "Cups",
+      "Water"
+    ],
+    "meaning": "Recognize what you have cultivated and what still needs attention. The suit of Cups brings this theme to feelings, relationships, and imagination.",
+    "reflection": "How does fulfillment show up in your feelings, relationships, and imagination?",
+    "rules": ""
+  },
+  {
+    "id": "cups-10",
+    "name": "Ten of Cups",
+    "group": "Minor Arcana · Cups · Water",
+    "image": "assets/cards/Cups10.webp",
+    "keywords": [
+      "Completion",
+      "Cups",
+      "Water"
+    ],
+    "meaning": "A cycle is reaching its full expression; consider what comes next. The suit of Cups brings this theme to feelings, relationships, and imagination.",
+    "reflection": "How does completion show up in your feelings, relationships, and imagination?",
+    "rules": ""
+  },
+  {
+    "id": "cups-11",
+    "name": "Page of Cups",
+    "group": "Minor Arcana · Cups · Water",
+    "image": "assets/cards/Cups11.webp",
+    "keywords": [
+      "Curiosity",
+      "Cups",
+      "Water"
+    ],
+    "meaning": "Approach this area with curiosity and a willingness to learn. The suit of Cups brings this theme to feelings, relationships, and imagination.",
+    "reflection": "How does curiosity show up in your feelings, relationships, and imagination?",
+    "rules": ""
+  },
+  {
+    "id": "cups-12",
+    "name": "Knight of Cups",
+    "group": "Minor Arcana · Cups · Water",
+    "image": "assets/cards/Cups12.webp",
+    "keywords": [
+      "Pursuit",
+      "Cups",
+      "Water"
+    ],
+    "meaning": "Pursue your intention while checking your pace and direction. The suit of Cups brings this theme to feelings, relationships, and imagination.",
+    "reflection": "How does pursuit show up in your feelings, relationships, and imagination?",
+    "rules": ""
+  },
+  {
+    "id": "cups-13",
+    "name": "Queen of Cups",
+    "group": "Minor Arcana · Cups · Water",
+    "image": "assets/cards/Cups13.webp",
+    "keywords": [
+      "Care",
+      "Cups",
+      "Water"
+    ],
+    "meaning": "Bring thoughtful care and mature understanding to this area. The suit of Cups brings this theme to feelings, relationships, and imagination.",
+    "reflection": "How does care show up in your feelings, relationships, and imagination?",
+    "rules": ""
+  },
+  {
+    "id": "cups-14",
+    "name": "King of Cups",
+    "group": "Minor Arcana · Cups · Water",
+    "image": "assets/cards/Cups14.webp",
+    "keywords": [
+      "Leadership",
+      "Cups",
+      "Water"
+    ],
+    "meaning": "Lead with responsibility, experience, and a clear sense of purpose. The suit of Cups brings this theme to feelings, relationships, and imagination.",
+    "reflection": "How does leadership show up in your feelings, relationships, and imagination?",
+    "rules": ""
+  },
+  {
+    "id": "swords-1",
+    "name": "Ace of Swords",
+    "group": "Minor Arcana · Swords · Air",
+    "image": "assets/cards/Swords01.webp",
+    "keywords": [
+      "Beginnings",
+      "Swords",
+      "Air"
+    ],
+    "meaning": "A fresh possibility is emerging. The suit of Swords brings this theme to thought, communication, and decisions.",
+    "reflection": "How does beginnings show up in your thought, communication, and decisions?",
+    "rules": ""
+  },
+  {
+    "id": "swords-2",
+    "name": "Two of Swords",
+    "group": "Minor Arcana · Swords · Air",
+    "image": "assets/cards/Swords02.webp",
+    "keywords": [
+      "Balance",
+      "Swords",
+      "Air"
+    ],
+    "meaning": "Balance competing needs and choose a workable rhythm. The suit of Swords brings this theme to thought, communication, and decisions.",
+    "reflection": "How does balance show up in your thought, communication, and decisions?",
+    "rules": ""
+  },
+  {
+    "id": "swords-3",
+    "name": "Three of Swords",
+    "group": "Minor Arcana · Swords · Air",
+    "image": "assets/cards/Swords03.webp",
+    "keywords": [
+      "Growth",
+      "Swords",
+      "Air"
+    ],
+    "meaning": "Shared effort and early growth are coming into focus. The suit of Swords brings this theme to thought, communication, and decisions.",
+    "reflection": "How does growth show up in your thought, communication, and decisions?",
+    "rules": ""
+  },
+  {
+    "id": "swords-4",
+    "name": "Four of Swords",
+    "group": "Minor Arcana · Swords · Air",
+    "image": "assets/cards/Swords04.webp",
+    "keywords": [
+      "Stability",
+      "Swords",
+      "Air"
+    ],
+    "meaning": "Consider the support and limitations of your current structure. The suit of Swords brings this theme to thought, communication, and decisions.",
+    "reflection": "How does stability show up in your thought, communication, and decisions?",
+    "rules": ""
+  },
+  {
+    "id": "swords-5",
+    "name": "Five of Swords",
+    "group": "Minor Arcana · Swords · Air",
+    "image": "assets/cards/Swords05.webp",
+    "keywords": [
+      "Challenge",
+      "Swords",
+      "Air"
+    ],
+    "meaning": "A challenge invites you to reconsider your response. The suit of Swords brings this theme to thought, communication, and decisions.",
+    "reflection": "How does challenge show up in your thought, communication, and decisions?",
+    "rules": ""
+  },
+  {
+    "id": "swords-6",
+    "name": "Six of Swords",
+    "group": "Minor Arcana · Swords · Air",
+    "image": "assets/cards/Swords06.webp",
+    "keywords": [
+      "Exchange",
+      "Swords",
+      "Air"
+    ],
+    "meaning": "Notice how giving, receiving, and past experience shape the present. The suit of Swords brings this theme to thought, communication, and decisions.",
+    "reflection": "How does exchange show up in your thought, communication, and decisions?",
+    "rules": ""
+  },
+  {
+    "id": "swords-7",
+    "name": "Seven of Swords",
+    "group": "Minor Arcana · Swords · Air",
+    "image": "assets/cards/Swords07.webp",
+    "keywords": [
+      "Assessment",
+      "Swords",
+      "Air"
+    ],
+    "meaning": "Step back and assess your options before committing. The suit of Swords brings this theme to thought, communication, and decisions.",
+    "reflection": "How does assessment show up in your thought, communication, and decisions?",
+    "rules": ""
+  },
+  {
+    "id": "swords-8",
+    "name": "Eight of Swords",
+    "group": "Minor Arcana · Swords · Air",
+    "image": "assets/cards/Swords08.webp",
+    "keywords": [
+      "Movement",
+      "Swords",
+      "Air"
+    ],
+    "meaning": "Focused movement or practice can carry you forward. The suit of Swords brings this theme to thought, communication, and decisions.",
+    "reflection": "How does movement show up in your thought, communication, and decisions?",
+    "rules": ""
+  },
+  {
+    "id": "swords-9",
+    "name": "Nine of Swords",
+    "group": "Minor Arcana · Swords · Air",
+    "image": "assets/cards/Swords09.webp",
+    "keywords": [
+      "Fulfillment",
+      "Swords",
+      "Air"
+    ],
+    "meaning": "Recognize what you have cultivated and what still needs attention. The suit of Swords brings this theme to thought, communication, and decisions.",
+    "reflection": "How does fulfillment show up in your thought, communication, and decisions?",
+    "rules": ""
+  },
+  {
+    "id": "swords-10",
+    "name": "Ten of Swords",
+    "group": "Minor Arcana · Swords · Air",
+    "image": "assets/cards/Swords10.webp",
+    "keywords": [
+      "Completion",
+      "Swords",
+      "Air"
+    ],
+    "meaning": "A cycle is reaching its full expression; consider what comes next. The suit of Swords brings this theme to thought, communication, and decisions.",
+    "reflection": "How does completion show up in your thought, communication, and decisions?",
+    "rules": ""
+  },
+  {
+    "id": "swords-11",
+    "name": "Page of Swords",
+    "group": "Minor Arcana · Swords · Air",
+    "image": "assets/cards/Swords11.webp",
+    "keywords": [
+      "Curiosity",
+      "Swords",
+      "Air"
+    ],
+    "meaning": "Approach this area with curiosity and a willingness to learn. The suit of Swords brings this theme to thought, communication, and decisions.",
+    "reflection": "How does curiosity show up in your thought, communication, and decisions?",
+    "rules": ""
+  },
+  {
+    "id": "swords-12",
+    "name": "Knight of Swords",
+    "group": "Minor Arcana · Swords · Air",
+    "image": "assets/cards/Swords12.webp",
+    "keywords": [
+      "Pursuit",
+      "Swords",
+      "Air"
+    ],
+    "meaning": "Pursue your intention while checking your pace and direction. The suit of Swords brings this theme to thought, communication, and decisions.",
+    "reflection": "How does pursuit show up in your thought, communication, and decisions?",
+    "rules": ""
+  },
+  {
+    "id": "swords-13",
+    "name": "Queen of Swords",
+    "group": "Minor Arcana · Swords · Air",
+    "image": "assets/cards/Swords13.webp",
+    "keywords": [
+      "Care",
+      "Swords",
+      "Air"
+    ],
+    "meaning": "Bring thoughtful care and mature understanding to this area. The suit of Swords brings this theme to thought, communication, and decisions.",
+    "reflection": "How does care show up in your thought, communication, and decisions?",
+    "rules": ""
+  },
+  {
+    "id": "swords-14",
+    "name": "King of Swords",
+    "group": "Minor Arcana · Swords · Air",
+    "image": "assets/cards/Swords14.webp",
+    "keywords": [
+      "Leadership",
+      "Swords",
+      "Air"
+    ],
+    "meaning": "Lead with responsibility, experience, and a clear sense of purpose. The suit of Swords brings this theme to thought, communication, and decisions.",
+    "reflection": "How does leadership show up in your thought, communication, and decisions?",
+    "rules": ""
+  },
+  {
+    "id": "pentacles-1",
+    "name": "Ace of Pentacles",
+    "group": "Minor Arcana · Pentacles · Earth",
+    "image": "assets/cards/Pentacles01.webp",
+    "keywords": [
+      "Beginnings",
+      "Pentacles",
+      "Earth"
+    ],
+    "meaning": "A fresh possibility is emerging. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
+    "reflection": "How does beginnings show up in your work, resources, and everyday foundations?",
+    "rules": ""
+  },
+  {
+    "id": "pentacles-2",
+    "name": "Two of Pentacles",
+    "group": "Minor Arcana · Pentacles · Earth",
+    "image": "assets/cards/Pentacles02.webp",
+    "keywords": [
+      "Balance",
+      "Pentacles",
+      "Earth"
+    ],
+    "meaning": "Balance competing needs and choose a workable rhythm. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
+    "reflection": "How does balance show up in your work, resources, and everyday foundations?",
+    "rules": ""
+  },
+  {
+    "id": "pentacles-3",
+    "name": "Three of Pentacles",
+    "group": "Minor Arcana · Pentacles · Earth",
+    "image": "assets/cards/Pentacles03.webp",
+    "keywords": [
+      "Growth",
+      "Pentacles",
+      "Earth"
+    ],
+    "meaning": "Shared effort and early growth are coming into focus. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
+    "reflection": "How does growth show up in your work, resources, and everyday foundations?",
+    "rules": ""
+  },
+  {
+    "id": "pentacles-4",
+    "name": "Four of Pentacles",
+    "group": "Minor Arcana · Pentacles · Earth",
+    "image": "assets/cards/Pentacles04.webp",
+    "keywords": [
+      "Stability",
+      "Pentacles",
+      "Earth"
+    ],
+    "meaning": "Consider the support and limitations of your current structure. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
+    "reflection": "How does stability show up in your work, resources, and everyday foundations?",
+    "rules": ""
+  },
+  {
+    "id": "pentacles-5",
+    "name": "Five of Pentacles",
+    "group": "Minor Arcana · Pentacles · Earth",
+    "image": "assets/cards/Pentacles05.webp",
+    "keywords": [
+      "Challenge",
+      "Pentacles",
+      "Earth"
+    ],
+    "meaning": "A challenge invites you to reconsider your response. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
+    "reflection": "How does challenge show up in your work, resources, and everyday foundations?",
+    "rules": ""
+  },
+  {
+    "id": "pentacles-6",
+    "name": "Six of Pentacles",
+    "group": "Minor Arcana · Pentacles · Earth",
+    "image": "assets/cards/Pentacles06.webp",
+    "keywords": [
+      "Exchange",
+      "Pentacles",
+      "Earth"
+    ],
+    "meaning": "Notice how giving, receiving, and past experience shape the present. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
+    "reflection": "How does exchange show up in your work, resources, and everyday foundations?",
+    "rules": ""
+  },
+  {
+    "id": "pentacles-7",
+    "name": "Seven of Pentacles",
+    "group": "Minor Arcana · Pentacles · Earth",
+    "image": "assets/cards/Pentacles07.webp",
+    "keywords": [
+      "Assessment",
+      "Pentacles",
+      "Earth"
+    ],
+    "meaning": "Step back and assess your options before committing. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
+    "reflection": "How does assessment show up in your work, resources, and everyday foundations?",
+    "rules": ""
+  },
+  {
+    "id": "pentacles-8",
+    "name": "Eight of Pentacles",
+    "group": "Minor Arcana · Pentacles · Earth",
+    "image": "assets/cards/Pentacles08.webp",
+    "keywords": [
+      "Movement",
+      "Pentacles",
+      "Earth"
+    ],
+    "meaning": "Focused movement or practice can carry you forward. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
+    "reflection": "How does movement show up in your work, resources, and everyday foundations?",
+    "rules": ""
+  },
+  {
+    "id": "pentacles-9",
+    "name": "Nine of Pentacles",
+    "group": "Minor Arcana · Pentacles · Earth",
+    "image": "assets/cards/Pentacles09.webp",
+    "keywords": [
+      "Fulfillment",
+      "Pentacles",
+      "Earth"
+    ],
+    "meaning": "Recognize what you have cultivated and what still needs attention. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
+    "reflection": "How does fulfillment show up in your work, resources, and everyday foundations?",
+    "rules": ""
+  },
+  {
+    "id": "pentacles-10",
+    "name": "Ten of Pentacles",
+    "group": "Minor Arcana · Pentacles · Earth",
+    "image": "assets/cards/Pentacles10.webp",
+    "keywords": [
+      "Completion",
+      "Pentacles",
+      "Earth"
+    ],
+    "meaning": "A cycle is reaching its full expression; consider what comes next. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
+    "reflection": "How does completion show up in your work, resources, and everyday foundations?",
+    "rules": ""
+  },
+  {
+    "id": "pentacles-11",
+    "name": "Page of Pentacles",
+    "group": "Minor Arcana · Pentacles · Earth",
+    "image": "assets/cards/Pentacles11.webp",
+    "keywords": [
+      "Curiosity",
+      "Pentacles",
+      "Earth"
+    ],
+    "meaning": "Approach this area with curiosity and a willingness to learn. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
+    "reflection": "How does curiosity show up in your work, resources, and everyday foundations?",
+    "rules": ""
+  },
+  {
+    "id": "pentacles-12",
+    "name": "Knight of Pentacles",
+    "group": "Minor Arcana · Pentacles · Earth",
+    "image": "assets/cards/Pentacles12.webp",
+    "keywords": [
+      "Pursuit",
+      "Pentacles",
+      "Earth"
+    ],
+    "meaning": "Pursue your intention while checking your pace and direction. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
+    "reflection": "How does pursuit show up in your work, resources, and everyday foundations?",
+    "rules": ""
+  },
+  {
+    "id": "pentacles-13",
+    "name": "Queen of Pentacles",
+    "group": "Minor Arcana · Pentacles · Earth",
+    "image": "assets/cards/Pentacles13.webp",
+    "keywords": [
+      "Care",
+      "Pentacles",
+      "Earth"
+    ],
+    "meaning": "Bring thoughtful care and mature understanding to this area. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
+    "reflection": "How does care show up in your work, resources, and everyday foundations?",
+    "rules": ""
+  },
+  {
+    "id": "pentacles-14",
+    "name": "King of Pentacles",
+    "group": "Minor Arcana · Pentacles · Earth",
+    "image": "assets/cards/Pentacles14.webp",
+    "keywords": [
+      "Leadership",
+      "Pentacles",
+      "Earth"
+    ],
+    "meaning": "Lead with responsibility, experience, and a clear sense of purpose. The suit of Pentacles brings this theme to work, resources, and everyday foundations.",
+    "reflection": "How does leadership show up in your work, resources, and everyday foundations?",
+    "rules": ""
+  }
+]
+
