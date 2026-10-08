@@ -137,7 +137,7 @@ function configImage(target,path,onLoad){
   const config=await response.json();
   if(typeof config.title!=='string'||typeof config.subtitle!=='string')throw Error('Site config needs title and subtitle strings');
   document.title=config.title;$('site-title').textContent=config.title;$('site-subtitle').textContent=config.subtitle;
-  $('card-brand').textContent=config.title;
+  if(typeof config.eyebrow==='string')$('site-eyebrow').textContent=config.eyebrow;
   if(config.headerIcon){
    const icon=config.headerIcon;
    if(typeof icon.symbol==='string'&&typeof icon.image==='string'){

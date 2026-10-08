@@ -31,6 +31,7 @@ Edit [`assets/site-config.json`](assets/site-config.json), save, and refresh:
 {
   "title": "Stars, Stones & Salt",
   "subtitle": "Find yourself in the cards.",
+  "eyebrow": "A MOMENT AT THE TABLE",
   "cardBack": {
     "symbol": "✦",
     "title": "Stars, Stones & Salt",
@@ -44,7 +45,7 @@ Edit [`assets/site-config.json`](assets/site-config.json), save, and refresh:
 }
 ```
 
-- `title` updates the header and browser tab; `subtitle` updates the introductory heading.
+- `title` updates the header and browser tab; `subtitle` updates the large introductory heading; `eyebrow` updates the small text above it.
 - `cardBack` controls the card shown before the first draw and after shuffling. Change its text, or set `image` to artwork such as `assets/cards/my-card-back.webp`. Use `\n` inside the title string for line breaks.
 - `headerIcon` controls both the top-left icon and the browser favicon. Change `symbol`, or set `image` to a path such as `assets/header-icon.webp`.
 
