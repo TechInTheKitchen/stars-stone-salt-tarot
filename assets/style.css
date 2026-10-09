@@ -7,12 +7,11 @@
 .card:disabled:hover{transform:none}
 .setting-toggle{display:flex;align-items:center;gap:12px;padding:16px 0;cursor:pointer}
 .setting-toggle input{width:20px;height:20px;accent-color:var(--accent);flex:none}
-.theme-label{display:block;margin:20px 0 8px;font-weight:600}
-#theme-select{width:100%;padding:12px;border:1px solid var(--line);border-radius:8px;background:var(--surface-2);color:var(--ink);font:inherit}
+#theme-select{width:auto;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--surface-2);color:var(--ink);font:inherit}
 #theme-select:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 
 /* Artwork never participates in sizing the card or the surrounding desk. */
-html{scrollbar-gutter:stable}
+html{scrollbar-gutter:auto}
 .desk{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
 .card{flex:none;min-height:0}
 .card img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
@@ -147,3 +146,18 @@ footer b,.desk-credit b{color:var(--accent);padding:0 10px}
 .pile-list li{padding:0}
 .pile-card-button{display:block;width:100%;min-height:44px;padding:12px 10px;text-align:left;border:0;background:transparent;color:var(--ink);border-radius:6px}
 .pile-card-button:hover{background:var(--surface-2);color:var(--accent)}
+
+/* Palette and mode controls share the top bar. */
+header{gap:16px}
+.appearance{display:flex;align-items:center;gap:12px;flex:none}
+.brand{overflow-wrap:anywhere}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:680px){header{gap:8px}.appearance{gap:4px}#theme-select{max-width:110px;padding:8px 4px;font-size:14px}}
+
+/* Keep the reveal transform steady while the artwork is loading. */
+.card.drawing{will-change:transform}
+.card.drawing:hover{transform:none}
+
+/* The viewport is fixed; perspective overflow stays visual and never creates page scrollbars. */
+html,body{overflow:clip}
+.card-area,.card-hand{overflow:visible}

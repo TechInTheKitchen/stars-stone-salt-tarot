@@ -1,6 +1,6 @@
 const $=id=>document.getElementById(id);
 const storageKey='tarot-desk-v1';
-let cards=[],state,storageAvailable=true;
+let cards=[],state,storageAvailable=true,drawing=false;
 function read(key){try{return localStorage.getItem(key);}catch{storageAvailable=false;return null;}}
 const desktop=matchMedia('(min-width:681px)');
 let clickToDraw=read('tarot-desk-click-to-draw')!=='false';
@@ -13,6 +13,7 @@ function updateCardAction(){
  $('card').disabled=draws?!enabled:desktop.matches;
  $('card').setAttribute('aria-label',desktop.matches?(enabled?'Draw next card':(current()?cardName(current()):'Tarot deck')):(draws?(enabled?'Draw next card':'Deck complete'):`Open information for ${cardName(current())}`));
  $('draw').disabled=(!desktop.matches&&swapMobile)?false:!state.remaining.length;
+ if(drawing){$('card').disabled=true;$('draw').disabled=true;}
  $('draw').textContent=(!desktop.matches&&swapMobile)?'Card notes':(state.remaining.length?'Draw a card':'Deck complete');
 }
 desktop.addEventListener('change',updateCardAction);
@@ -45,7 +46,55 @@ function render(){const c=current();if(!c)$("card").setAttribute("aria-label","O
 function open(label){$('modal-label').textContent=label;$('modal-body').replaceChildren();if(!$('modal').open)$('modal').showModal();return $('modal-body');}
 function inventory(){const body=open('YOUR DECK');body.append(el('h2','A place for every card'));const counts=el('div','','counts');counts.append(el('span',`${state.remaining.length} remaining`),el('span',`${state.discards.length} discarded`),el('span',`${state.current?1:0} on the table`));body.append(counts);if(current())body.append(el('p',`On the table: ${cardName(current())}`));body.append(el('h3','Discard pile · newest first'));if(!state.discards.length)body.append(el('p','No discarded cards yet. Your current card moves here on the next draw.'));const list=el('ol','','pile-list');[...state.discards].reverse().forEach(id=>{const c=cards.find(c=>c.id===id),item=el('li'),button=el('button',cardName(c),'pile-card-button');button.type='button';button.dataset.cardId=id;button.setAttribute('aria-label',`Open notes for ${cardName(c)}`);button.onclick=()=>showDiscardNotes(id);item.append(button);list.append(item);});body.append(list,el('p','The order of the remaining deck stays hidden until you draw.'));}
 $('close').onclick=()=>$('modal').close();$('modal').addEventListener('click',e=>{if(e.target===$('modal')){const r=$('modal').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('modal').close();}});
-function drawCard(){if(!state||!state.remaining.length)return;state=TarotDeck.draw(state,allowInverted);save();render();}
+async function drawCard(){
+ if(drawing||!state||!state.remaining.length)return;
+ drawing=true;state=TarotDeck.draw(state,allowInverted);save();render();
+ const card=$('card'),image=$('card-image'),back=card.querySelector('.card-back');
+ image.hidden=true;back.hidden=false;card.classList.add('drawing');
+ card.setAttribute('aria-busy','true');$('settings').disabled=true;
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ let timer,animation;
+ const entranceAnimations=[];
+ try{
+  if(!reduced){
+   const timing={duration:260,easing:'cubic-bezier(.22,.61,.36,1)'};
+   // Every existing discard advances one fan position; the newest starts at the hand.
+   $('discards').querySelectorAll('.discard-card').forEach(frame=>{
+    const previousStep=Number(frame.style.getPropertyValue('--fan-step'))-1;
+    entranceAnimations.push(frame.animate([
+     {transform:'translateX('+(-7*previousStep)+'%) rotate('+(-9*previousStep)+'deg)'},
+     {transform:getComputedStyle(frame).transform}
+    ],timing));
+   });
+   entranceAnimations.push(back.animate([{opacity:0},{opacity:1}],timing));
+  }
+  // Decode the actual displayed image before revealing it, even on a slow connection.
+  await Promise.all([
+   Promise.race([image.decode(),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('Card artwork took too long to load.')),15000);})]),
+   Promise.all(entranceAnimations.map(animation=>animation.finished))
+  ]);
+  clearTimeout(timer);
+  if(!reduced){
+   animation=card.animate([{transform:'perspective(1000px) rotateY(0deg)'},{transform:'perspective(1000px) rotateY(-90deg)'}],{duration:140,easing:'ease-in',fill:'forwards'});
+   await animation.finished;
+  }
+  back.hidden=true;image.hidden=false;
+  if(animation)animation.cancel();
+  if(!reduced){
+   animation=card.animate([{transform:'perspective(1000px) rotateY(90deg)'},{transform:'perspective(1000px) rotateY(0deg)'}],{duration:180,easing:'ease-out',fill:'forwards'});
+   await animation.finished;
+  }
+ }catch(error){
+  image.hidden=true;back.hidden=false;
+  $('status').textContent+=' · Artwork unavailable. Draw again or refresh to retry.';
+  console.warn(error.message);
+ }finally{
+  clearTimeout(timer);if(animation)animation.cancel();
+  entranceAnimations.forEach(animation=>animation.cancel());
+  drawing=false;card.classList.remove('drawing');card.removeAttribute('aria-busy');
+  $('settings').disabled=false;updateCardAction();
+ }
+}
 function showDiscardNotes(id){
  if(!state||!state.discards.includes(id))return;
  const c=cards.find(card=>card.id===id),body=open('DISCARDED CARD');info(body,c);
@@ -59,10 +108,6 @@ $('card').onclick=()=>{if(!state)return;if(desktop.matches){if(clickToDraw)drawC
 $('discards').onclick=()=>{if(state)inventory();};
 $('settings').onclick=()=>{
  if(!state)return;const body=open('DECK SETTINGS');body.append(el('h2','Your table'));
- const themeLabel=el('label','Theme','theme-label');themeLabel.htmlFor='theme-select';
- const themeSelect=document.createElement('select');themeSelect.id='theme-select';
- themes.forEach(theme=>{const option=el('option',theme.name);option.value=theme.id;themeSelect.append(option);});
- themeSelect.value=selectedTheme;themeSelect.onchange=()=>applyTheme(themeSelect.value);body.append(themeLabel,themeSelect);
 
  const label=el('label','','setting-toggle'),toggle=document.createElement('input');
  toggle.type='checkbox';toggle.checked=clickToDraw;
@@ -83,6 +128,9 @@ $('settings').onclick=()=>{
  const button=el('button','Shuffle the deck','primary');button.onclick=()=>{state=TarotDeck.shuffle(cards.map(c=>c.id));save();render();$('modal').close();};body.append(button);
 };
 const themes=[{id:'dusk',name:'Dusk'},{id:'ocean',name:'Ocean'},{id:'parchment',name:'Parchment'},{id:'sage',name:'Sage'}];
+const themeSelect=$('theme-select');
+themes.forEach(theme=>{const option=el('option',theme.name);option.value=theme.id;themeSelect.append(option);});
+themeSelect.onchange=()=>applyTheme(themeSelect.value);
 const savedTheme=read('tarot-desk-theme');
 let selectedTheme;
 const savedMode=read('tarot-desk-mode');

@@ -19,7 +19,7 @@ The app is static HTML, CSS, and JavaScript, with no build step or external serv
 - On mobile, tapping the drawn card opens its information. Enable **Swap draw button and rules interaction** in Settings to tap the card to draw and use **Card notes** for information instead.
 - Tap or click the discard fan to view discarded cards and deck counts. Select a card in the list to open its meanings, reflection, and rules in its saved upright or inverted orientation; use **Back to discard pile** to return. Card information also includes a link to this view.
 - **Allow inverted cards** in Settings gives each draw a 50% chance of inversion and displays its matching notes. Changing this checkbox immediately reshuffles all 78 cards and clears the current card and discard pile. The warning appears beside the setting.
-- **Settings** provides themes, interaction preferences, and a shuffle action that resets the current card and discards. The header button switches between light and dark mode.
+- **Settings** provides interaction preferences and a shuffle action that resets the current card and discards. The top bar provides the color palette dropdown and the light/dark mode button.
 
 Deck order, current card, discards, card orientations, and preferences are saved in localStorage. Clearing browser data resets them. When storage is unavailable, the status reports that progress lasts only for the current session. Saved decks do not sync between browsers or devices.
 
